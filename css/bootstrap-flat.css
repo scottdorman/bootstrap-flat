@@ -1,0 +1,217 @@
+/*!
+ * Flat styles for Bootstrap v3.0.0
+ *
+ * Copyright 2013 Scott Dorman
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world by @sdorman.
+ */
+
+code {
+    border-radius: 0;
+}
+
+pre {
+    border-radius: 0;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+    .form-control.input-large {
+        border-radius: 0;
+    }
+
+    .form-control.input-small {
+        border-radius: 0;
+    }
+
+.input-group-addon {
+    border-radius: 0;
+}
+
+    .input-group-addon.input-small {
+        border-radius: 0;
+    }
+
+    .input-group-addon.input-large {
+        border-radius: 0;
+    }
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-large {
+    border-radius: 0;
+}
+
+.btn-small {
+    border-radius: 0;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+}
+
+.list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.panel {
+    border-radius: 0;
+}
+
+.panel-heading {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.panel-footer {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.well {
+    border-radius: 0;
+}
+
+.well-large {
+    border-radius: 0;
+}
+
+.well-small {
+    border-radius: 0;
+}
+
+.nav-tabs > li > a {
+    border-radius: 0;
+}
+
+.nav-pills > li > a {
+    border-radius: 0;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-nav > li > a {
+    border-radius: 0;
+}
+
+.navbar-toggle {
+    border-radius: 0;
+}
+
+    .navbar-toggle .icon-bar {
+        border-radius: 0;
+    }
+
+.breadcrumb {
+    border-radius: 0;
+}
+
+.pagination {
+    border-radius: 0;
+}
+
+    .pagination > li:first-child > a,
+    .pagination > li:first-child > span {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .pagination > li:last-child > a,
+    .pagination > li:last-child > span {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+.pagination-large > li:first-child > a,
+.pagination-large > li:first-child > span {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.pagination-large > li:last-child > a,
+.pagination-large > li:last-child > span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.pagination-small > li:first-child > a,
+.pagination-small > li:first-child > span {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.pagination-small > li:last-child > a,
+.pagination-small > li:last-child > span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.pager li > a,
+.pager li > span {
+    border-radius: 0;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+.tooltip-inner {
+    border-radius: 0;
+}
+
+.popover {
+    border-radius: 0;
+}
+
+.popover-title {
+    border-radius: 0;
+}
+
+.alert {
+    border-radius: 0;
+}
+
+.thumbnail,
+.img-thumbnail {
+    border-radius: 0;
+}
+
+.label {
+    border-radius: 0;
+}
+
+.badge {
+    border-radius: 0;
+}
+
+.progress {
+    border-radius: 0;
+}
+
+.accordion-group {
+    border-radius: 0;
+}
+
+.carousel-indicators li {
+    border-radius: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        border-radius: 0;
+    }
+}
