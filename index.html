@@ -1,72 +1,103 @@
-<!doctype html>
-<html>
-  <head>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Bootstrap-flat by scottdorman</title>
+    <title>Bootstrap-flat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple flat theme for Bootstrap 3">
+    <meta name="keywords" content="CSS3, Microsoft, Metro, Modern, Bootstrap, BS3, Flat, Theme">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/docs.css" rel="stylesheet" />
+    <link href="./css/bootstrap-flat.css" rel="stylesheet" />
+    <link href="./css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="./css/docs-flat.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href=".css/ico/favicon.ico">
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Bootstrap-flat</h1>
-        <p class="header">A simple flat theme for Twitter Bootstrap 3</p>
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Bootstrap-flat</a>
+        </div>
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/scottdorman/bootstrap-flat/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/scottdorman/bootstrap-flat/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/scottdorman/bootstrap-flat">View On GitHub</a></li>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="getting-started.html">Getting started</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+<div class="container bs-docs-container">
+    <br />
+<div class="well well-lg">
+  <h1>Bootstrap-flat</h1>
+  <p>A simple flat theme for Bootstrap 3.</p>
+  <p><a class="btn btn-primary btn-lg">Download latest</a></p>
+<div class="alert alert-danger"><b>Heads up!</b> Downloads are pulled directly from the latest committed code on GitHub,
+and as a result our docs may at times be out of sync.</div>
+    <div class="container">
+        <ul class="list-unstyled list-inline">
+          <li>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=scottdorman&repo=bootstrap-flat&type=watch&count=true"
+            allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+          </li>
+          <li>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=scottdorman&repo=bootstrap-flat&type=fork&count=true"
+            allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+          </li>
+          <li class="tweet-btn">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://github.com/scottdorman/bootstrap-flat" data-text="A simple flat theme for Bootstrap 3.">Tweet</a>
+		    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><br/>
+          </li>
         </ul>
-
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/scottdorman">scottdorman</a></p>
-
-
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
+</div>
+    <div class="row">
+		    <div class="col-md-6">
+                <h3>Created from a need.</h3>
+                <p>While Bootstrap 3 does away with the skeumorphic design characterstics of earlier versions,
+                making it mostly a flat design, it doesn't completely embrace the "modern" design elements
+                (inspired by Microsoft's Modern Design Language of Windows Phone and Windows 8) and still includes
+                soft, rounded edges on many of the UI elements.</p>
+				<p>Although there are already several other "flat" or "modern" skins for Bootstrap, they aren't built for
+				Bootstrap 3. They are also completely custom Bootstrap implementations and in most cases include their own,
+				modified, version of bootstrap.css making it difficult to upgrade to newer versions of Bootstrap.</p>
+				<p>Bootstrap-flat aims to change that. It's built on top of Bootstrap 3 and uses Bootstrap's
+				recommended method of providing "light" customizations. In other words, these customisations are
+				pure CSS.</p>
+            </div>
+            <div class="col-md-6">
+        	    <h3>Highly encouraged for sharing.</h3>
+                <p>Free to use for any projects you have in mind, although it would be nice if you gave
+                <a href="http://twitter.com/sdorman">credit</a>.</p>
+            </div>
+    </div>
+
+</div>
+
+<hr/>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2013 <a href="http://github.com/scottdorman/bootstrap-flat">Bootstrap-flat</a> by
+            <a href="http://about.me/scottdorman">Scott Dorman</a>.
+        </p>
+    </footer>
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+    <script src="./js/application.js"></script>
   </body>
 </html>
