@@ -12,7 +12,7 @@
 /* Modify the button style to apply a 3px colored stripe down the left side.
  * Inspired by css3-microsoft-metro-buttons (https://github.com/ace-subido/css3-microsoft-metro-buttons)
  */
-.btn-striped :not(.btn-link) {
+.btn-striped  {
     color: #333333;
     background-color: #ffffff;
     border-left-width: 3px;
@@ -20,10 +20,10 @@
     border-top: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc;
 }
-    .btn-striped:hover :not(.btn-link),
-    .btn-striped:focus :not(.btn-link),
-    .btn-striped:active :not(.btn-link),
-    .btn-striped.active :not(.btn-link) {
+    .btn-striped:hover,
+    .btn-striped:focus,
+    .btn-striped:active,
+    .btn-striped.active {
         color: #333333;
         background-color: #ebebeb;
         border-right: 1px solid #adadad;
@@ -51,3 +51,73 @@
         border-top: 1px solid #cccccc;
         border-bottom: 1px solid #cccccc;
     }
+
+.callout {
+  margin: 20px 0;
+  padding: 15px 30px 15px 15px;
+  background-color: #fefbed;
+  border-color: #f1e7bc;
+  border-left: 4px solid #f1e7bc;
+}
+
+.callout h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+.callout hr {
+  border-top-color: #f8e5be;
+}
+
+.callout .callout-link {
+  font-weight: bold;
+  color: #a47e3c;
+}
+
+.callout > p,
+.callout > ul {
+  margin-bottom: 0;
+}
+
+.callout > p + p {
+  margin-top: 5px;
+}
+
+.callout-success {
+  background-color: #e7fadf;
+  border-color: #b9ceab;
+}
+
+.callout-success hr {
+  border-top-color: #c9e2b3;
+}
+
+.callout-success .callout-link {
+  color: #356635;
+}
+
+.callout-danger {
+  background-color: #fcf2f2;
+  border-color: #dFb5b4;
+}
+
+.callout-danger hr {
+  border-top-color: #e6c1c7;
+}
+
+.callout-danger .callout-link {
+  color: #953b39;
+}
+
+.callout-info {
+  background-color: #f0f7fd;
+  border-color: #d0e3f0;
+}
+
+.callout-info hr {
+  border-top-color: #a6e1ec;
+}
+
+.callout-info .callout-link {
+  color: #2d6987;
+}
