@@ -1,7 +1,9 @@
 bootstrap-flat
 ==============
 
-A simple flat theme for Twitter Bootstrap 3.
+A simple flat theme for Twitter Bootstrap 3. To see Bootstrap flat in action, check out the [documentation](http://scottdorman.github.io/bootstrap-flat).
+
+****
 
 While Bootstrap 3 does away with the skeumorphic design characterstics of earlier versions, making it mostly a flat design, it doesn't completely embrace the "modern" design elements (inspired by Microsoft's Modern Design Language of Windows Phone and Windows 8) and still includes soft, rounded edges on many of the UI elements.
 
