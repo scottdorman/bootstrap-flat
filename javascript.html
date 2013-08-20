@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -9,35 +9,35 @@
 
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link href="./css/docs.css" rel="stylesheet" />
-    <link href="./css/bootstrap-flat.css" rel="stylesheet" />
-    <link href="./css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="./css/bootstrap-flat.min.css" rel="stylesheet" />
+    <link href="./css/bootstrap-flat-extras.min.css" rel="stylesheet" />
     <link href="./css/docs-flat.css" rel="stylesheet" />
 
     <link rel="shortcut icon" href=".css/ico/favicon.ico">
 </head>
 
 <body data-spy="scroll" data-target=".bs-sidebar">
-    <nav class="navbar navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Bootstrap-flat</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-             <li><a href="getting-started.html">Getting started</a></li>
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html" class="navbar-brand">Bootstrap Flat</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+                <li><a href="getting-started.html">Getting started</a></li>
                 <li><a href="css.html">CSS</a></li>
                 <li><a href="components.html">Components</a></li>
                 <li class="active"><a href="javascript.html">Javascript</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
+      </ul>
     </nav>
+  </div>
+</header>
 
     <div class="bs-header" id="content">
         <div class="container">
@@ -49,7 +49,7 @@
     <div class="container bs-docs-container">
         <div class="row">
             <div class="col-md-3">
-                <aside data-spy="affix" data-offset-top="200" class="bs-sidebar" role="complementary">
+                <div class="bs-sidebar" role="complementary">
                     <ul class="nav bs-sidenav">
 <li>
   <a href="#modals">Modal</a>
@@ -87,6 +87,12 @@
   </ul>
 </li>
 <li>
+  <a href="#alerts">Alerts</a>
+  <ul class="nav">
+    <li><a href="#alerts-examples">Examples</a></li>
+    <li><a href="#alerts-usage">Usage</a></li>
+  </ul>
+</li><li>
   <a href="#buttons">Button</a>
   <ul class="nav">
     <li><a href="#buttons-examples">Examples</a></li>
@@ -108,10 +114,9 @@
   </ul>
 </li>
                     </ul>
-                </aside>
+                </div>
             </div>
             <div class="col-md-9" role="main">
-                <div class="bs-docs-section">
   <!-- Modal
   ================================================== -->
   <div class="bs-docs-section">
@@ -256,7 +261,7 @@
 
     <h3>Options</h3>
     <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -295,7 +300,7 @@
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 
     <h3>Methods</h3>
 
@@ -323,7 +328,7 @@
 
     <h3>Events</h3>
     <p>Bootstrap's modal class exposes a few events for hooking into modal functionality.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -350,12 +355,14 @@
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myModal&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;hidden.bs.modal&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="c1">// do something…</span>
 <span class="p">})</span>
 </code></pre></div>
   </div>
+
+
 
   <!-- Dropdowns
   ================================================== -->
@@ -369,52 +376,52 @@
 
     <h3>Within a navbar</h3>
     <div class="bs-example">
-      <nav id="navbar-example" class="navbar navbar-static" role="navigation">
-        <div class="container" style="width: auto;">
-          <a class="navbar-brand" href="#">Project Name</a>
+      <nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+        <div class="navbar-header">
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-js-navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="nav-collapse collapse bs-js-navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
-                  <li role="presentation" class="divider"></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 2 <b class="caret"></b></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
-                  <li role="presentation" class="divider"></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav pull-right">
-              <li id="fat-menu" class="dropdown">
-                <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 3 <b class="caret"></b></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
-                  <li role="presentation" class="divider"></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!-- /.nav-collapse -->
-        </div><!-- /.container -->
+          <a class="navbar-brand" href="#">Project Name</a>
+        </div>
+        <div class="collapse navbar-collapse bs-js-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 2 <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li id="fat-menu" class="dropdown">
+              <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 3 <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.nav-collapse -->
       </nav> <!-- /navbar-example -->
     </div> <!-- /example -->
 
@@ -491,7 +498,7 @@
     <p>Toggles the dropdown menu of a given navbar or tabbed navigation.</p>
 
     <h3>Events</h3>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
           <tr>
@@ -518,12 +525,13 @@
           </tr>
         </tbody>
       </table>
-    </div><!-- ./bs-table-scrollable -->
+    </div><!-- ./bs-table-responsive -->
 <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myDropdown&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;show.bs.dropdown&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="c1">// do something…</span>
 <span class="p">})</span>
 </code></pre></div>
   </div>
+
 
   <!-- Tabs
   ================================================== -->
@@ -539,10 +547,10 @@
         <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
         <li><a href="#profile" data-toggle="tab">Profile</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#dropdown1" data-toggle="tab">@fat</a></li>
-            <li><a href="#dropdown2" data-toggle="tab">@mdo</a></li>
+          <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+            <li><a href="#dropdown1" tabindex="-1" data-toggle="tab">@fat</a></li>
+            <li><a href="#dropdown2" tabindex="-1" data-toggle="tab">@mdo</a></li>
           </ul>
         </li>
       </ul>
@@ -566,16 +574,16 @@
     <h2 id="tabs-usage">Usage</h2>
     <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
 <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myTab a&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-  <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">tab</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">);</span>
+  <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>
+  <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">tab</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">)</span>
 <span class="p">})</span>
 </code></pre></div>
 
           <p>You can activate individual tabs in several ways:</p>
-<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myTab a[href=&quot;#profile&quot;]&#39;</span><span class="p">).</span><span class="nx">tab</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">);</span> <span class="c1">// Select tab by name</span>
-<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myTab a:first&#39;</span><span class="p">).</span><span class="nx">tab</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">);</span> <span class="c1">// Select first tab</span>
-<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myTab a:last&#39;</span><span class="p">).</span><span class="nx">tab</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">);</span> <span class="c1">// Select last tab</span>
-<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myTab li:eq(2) a&#39;</span><span class="p">).</span><span class="nx">tab</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">);</span> <span class="c1">// Select third tab (0-indexed)</span>
+<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myTab a[href=&quot;#profile&quot;]&#39;</span><span class="p">).</span><span class="nx">tab</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">)</span> <span class="c1">// Select tab by name</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myTab a:first&#39;</span><span class="p">).</span><span class="nx">tab</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">)</span> <span class="c1">// Select first tab</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myTab a:last&#39;</span><span class="p">).</span><span class="nx">tab</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">)</span> <span class="c1">// Select last tab</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myTab li:eq(2) a&#39;</span><span class="p">).</span><span class="nx">tab</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">)</span> <span class="c1">// Select third tab (0-indexed)</span>
 </code></pre></div>
 
     <h3>Markup</h3>
@@ -611,13 +619,13 @@
 
 <span class="nt">&lt;script&gt;</span>
   <span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myTab a:last&#39;</span><span class="p">).</span><span class="nx">tab</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myTab a:last&#39;</span><span class="p">).</span><span class="nx">tab</span><span class="p">(</span><span class="s1">&#39;show&#39;</span><span class="p">)</span>
   <span class="p">})</span>
 <span class="nt">&lt;/script&gt;</span>
 </code></pre></div>
 
     <h3>Events</h3>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -636,13 +644,15 @@
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a[data-toggle=&quot;tab&quot;]&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;shown.bs.tab&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">e</span><span class="p">.</span><span class="nx">target</span> <span class="c1">// activated tab</span>
   <span class="nx">e</span><span class="p">.</span><span class="nx">relatedTarget</span> <span class="c1">// previous tab</span>
 <span class="p">})</span>
 </code></pre></div>
   </div>
+
+
 
   <!-- Tooltips
   ================================================== -->
@@ -682,7 +692,7 @@
 
     <h3>Options</h3>
     <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-animation=""</code>.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -749,7 +759,7 @@
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
     <div class="bs-callout bs-callout-info">
       <h4>Data attributes for individual tooltips</h4>
       <p>Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.</p>
@@ -785,7 +795,7 @@
 </code></pre></div>
 
     <h3>Events</h3>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -812,9 +822,9 @@
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myTooltip&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;hidden.bs.tooltip&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-<span class="c1">// do something…</span>
+  <span class="c1">// do something…</span>
 <span class="p">})</span>
 </code></pre></div>
   </div>
@@ -907,7 +917,7 @@
 
     <h3>Options</h3>
     <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-animation=""</code>.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
           <tr>
@@ -975,12 +985,12 @@
             <td>string | false</td>
             <td>false</td>
             <td>
-             <p>Appends the popover to a specific element. Example: <code>container: 'body'</code></p>
+             <p>Appends the popover to a specific element. Example: <code>container: 'body'</code>. This option is particularly useful in that it allows you to position the popover in the flow of the document near the triggering element - which will prevent the popover from floating away from the triggering element during a window resize.</p>
             </td>
           </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
     <div class="bs-callout bs-callout-info">
       <h4>Data attributes for individual popovers</h4>
       <p>Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.</p>
@@ -1013,7 +1023,7 @@
     <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#element&#39;</span><span class="p">).</span><span class="nx">popover</span><span class="p">(</span><span class="s1">&#39;destroy&#39;</span><span class="p">)</span>
 </code></pre></div>
     <h3>Events</h3>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -1040,12 +1050,92 @@
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myPopover&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;hidden.bs.popover&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="c1">// do something…</span>
 <span class="p">})</span>
 </code></pre></div>
   </div>
+
+  <!-- Alert
+  ================================================== -->
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="alerts">Alert messages <small>alert.js</small></h1>
+    </div>
+
+
+    <h2 id="alerts-examples">Example alerts</h2>
+    <p>Add dismiss functionality to all alert messages with this plugin.</p>
+    <div class="bs-example">
+      <div class="alert alert-warning fade in">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+      </div>
+    </div><!-- /example -->
+
+    <div class="bs-example">
+      <div class="alert alert-block alert-danger fade in">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <h4>Oh snap! You got an error!</h4>
+        <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p>
+          <a class="btn btn-danger" href="#">Take this action</a> <a class="btn btn-default" href="#">Or do this</a>
+        </p>
+      </div>
+    </div><!-- /example -->
+
+
+    <h2 id="alerts-usage">Usage</h2>
+    <p>Enable dismissal of an alert via JavaScript:</p>
+    <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.alert&quot;</span><span class="p">).</span><span class="nx">alert</span><span class="p">()</span>
+</code></pre></div>
+
+    <h3>Markup</h3>
+    <p>Just add <code>data-dismiss="alert"</code> to your close button to automatically give an alert close functionality.</p>
+    <div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;close&quot;</span> <span class="na">data-dismiss=</span><span class="s">&quot;alert&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">aria-hidden=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+
+    <h3>Methods</h3>
+
+    <h4>$().alert()</h4>
+    <p>Wraps all alerts with close functionality. To have your alerts animate out when closed, make sure they have the <code>.fade</code> and <code>.in</code> class already applied to them.</p>
+
+    <h4>.alert('close')</h4>
+    <p>Closes an alert.</p>
+    <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.alert&quot;</span><span class="p">).</span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;close&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+
+    <h3>Events</h3>
+    <p>Bootstrap's alert class exposes a few events for hooking into alert functionality.</p>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th style="width: 150px;">Event Type</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>close.bs.alert</td>
+            <td>This event fires immediately when the <code>close</code> instance method is called.</td>
+          </tr>
+          <tr>
+            <td>closed.bs.alert</td>
+            <td>This event is fired when the alert has been closed (will wait for CSS transitions to complete).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!-- /.table-responsive -->
+<div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#my-alert&#39;</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="s1">&#39;closed.bs.alert&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// do something…</span>
+<span class="p">})</span>
+</code></pre></div>
+  </div>
+
+
 
   <!-- Buttons
   ================================================== -->
@@ -1179,6 +1269,8 @@
 </code></pre></div>
   </div>
 
+
+
   <!-- Collapse
   ================================================== -->
   <div class="bs-docs-section">
@@ -1199,13 +1291,13 @@
 
     <div class="bs-example">
       <div class="panel-group" id="accordion">
-        <div class="panel">
+        <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">
+            <h4 class="panel-title">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                 Collapsible Group Item #1
               </a>
-            </h3>
+            </h4>
           </div>
           <div id="collapseOne" class="panel-collapse collapse in">
             <div class="panel-body">
@@ -1213,13 +1305,13 @@
             </div>
           </div>
         </div>
-        <div class="panel">
+        <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">
+            <h4 class="panel-title">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                 Collapsible Group Item #2
               </a>
-            </h3>
+            </h4>
           </div>
           <div id="collapseTwo" class="panel-collapse collapse">
             <div class="panel-body">
@@ -1227,13 +1319,13 @@
             </div>
           </div>
         </div>
-        <div class="panel">
+        <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">
+            <h4 class="panel-title">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
                 Collapsible Group Item #3
               </a>
-            </h3>
+            </h4>
           </div>
           <div id="collapseThree" class="panel-collapse collapse">
             <div class="panel-body">
@@ -1244,13 +1336,13 @@
       </div>
     </div><!-- /example -->
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-group&quot;</span> <span class="na">id=</span><span class="s">&quot;accordion&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel panel-default&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-heading&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;panel-title&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;panel-title&quot;</span><span class="nt">&gt;</span>
         <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;accordion-toggle&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;collapse&quot;</span> <span class="na">data-parent=</span><span class="s">&quot;#accordion&quot;</span> <span class="na">href=</span><span class="s">&quot;#collapseOne&quot;</span><span class="nt">&gt;</span>
           Collapsible Group Item #1
         <span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;/h4&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;collapseOne&quot;</span> <span class="na">class=</span><span class="s">&quot;panel-collapse collapse in&quot;</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-body&quot;</span><span class="nt">&gt;</span>
@@ -1258,13 +1350,13 @@
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel panel-default&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-heading&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;panel-title&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;panel-title&quot;</span><span class="nt">&gt;</span>
         <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;accordion-toggle&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;collapse&quot;</span> <span class="na">data-parent=</span><span class="s">&quot;#accordion&quot;</span> <span class="na">href=</span><span class="s">&quot;#collapseTwo&quot;</span><span class="nt">&gt;</span>
           Collapsible Group Item #2
         <span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;/h4&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;collapseTwo&quot;</span> <span class="na">class=</span><span class="s">&quot;panel-collapse collapse&quot;</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-body&quot;</span><span class="nt">&gt;</span>
@@ -1272,13 +1364,13 @@
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel panel-default&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-heading&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;panel-title&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;panel-title&quot;</span><span class="nt">&gt;</span>
         <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;accordion-toggle&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;collapse&quot;</span> <span class="na">data-parent=</span><span class="s">&quot;#accordion&quot;</span> <span class="na">href=</span><span class="s">&quot;#collapseThree&quot;</span><span class="nt">&gt;</span>
           Collapsible Group Item #3
         <span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;/h4&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;collapseThree&quot;</span> <span class="na">class=</span><span class="s">&quot;panel-collapse collapse&quot;</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-body&quot;</span><span class="nt">&gt;</span>
@@ -1311,7 +1403,7 @@
 
     <h3>Options</h3>
     <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-parent=""</code>.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -1336,7 +1428,7 @@
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 
     <h3>Methods</h3>
 
@@ -1358,7 +1450,7 @@
 
     <h3>Events</h3>
     <p>Bootstrap's collapse class exposes a few events for hooking into collapse functionality.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -1387,12 +1479,14 @@
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myCollapsible&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;hidden.bs.collapse&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="c1">// do something…</span>
 <span class="p">})</span>
 </code></pre></div>
   </div>
+
+
 
   <!-- Carousel
   ================================================== -->
@@ -1459,7 +1553,7 @@
 </code></pre></div>
 <div class="bs-callout bs-callout-info">
   <h4>Glyphicon Alternative</h4>
-  <p>With <a href="http://glyphicons.getbootstrap.com">Glyphicons</a> available, you may choose to style the left and right toggle buttons with <code>.glyphicon .glyphicon-chevron-left</code> and <code>.glyphicon .glyphicon-chevron-right</code>.</p>
+  <p>With <a href="../components/#glyphicons">Glyphicons</a> available, you may choose to style the left and right toggle buttons with <code>.glyphicon .glyphicon-chevron-left</code> and <code>.glyphicon .glyphicon-chevron-right</code>.</p>
 </div>
 
     <h3>Optional captions</h3>
@@ -1528,7 +1622,7 @@
 
     <h3>Options</h3>
     <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-interval=""</code>.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -1559,7 +1653,7 @@
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 
     <h3>Methods</h3>
 
@@ -1588,7 +1682,7 @@
 
     <h3>Events</h3>
     <p>Bootstrap's carousel class exposes two events for hooking into carousel functionality.</p>
-    <div class="bs-table-scrollable">
+    <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead>
          <tr>
@@ -1607,13 +1701,12 @@
          </tr>
         </tbody>
       </table>
-    </div><!-- /.bs-table-scrollable -->
+    </div><!-- /.table-responsive -->
 <div class="highlight"><pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#myCarousel&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;slide.bs.carousel&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="c1">// do something…</span>
 <span class="p">})</span>
 </code></pre></div>
   </div>
-                </div>
             </div>
         </div>
     </div>

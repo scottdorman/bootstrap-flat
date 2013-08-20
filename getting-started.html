@@ -9,35 +9,35 @@
 
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link href="./css/docs.css" rel="stylesheet" />
-    <link href="./css/bootstrap-flat.css" rel="stylesheet" />
-    <link href="./css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="./css/bootstrap-flat.min.css" rel="stylesheet" />
+    <link href="./css/bootstrap-flat-extras.min.css" rel="stylesheet" />
     <link href="./css/docs-flat.css" rel="stylesheet" />
 
     <link rel="shortcut icon" href=".css/ico/favicon.ico">
 </head>
 
 <body data-spy="scroll" data-target=".bs-sidebar">
-    <nav class="navbar navbar-fixed-top" role="navigation">
-       <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Bootstrap-flat</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html" class="navbar-brand">Bootstrap Flat</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
                 <li class="active"><a href="getting-started.html">Getting started</a></li>
                 <li><a href="css.html">CSS</a></li>
                 <li><a href="components.html">Components</a></li>
                 <li><a href="javascript.html">Javascript</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
+      </ul>
     </nav>
+  </div>
+</header>
 
     <div class="bs-header" id="content">
         <div class="container">
@@ -49,7 +49,7 @@
     <div class="container bs-docs-container">
         <div class="row">
             <div class="col-md-3">
-                <aside data-spy="affix" data-offset-top="200" class="bs-sidebar" role="complementary">
+                <div class="bs-sidebar" role="complementary">
                     <ul class="nav bs-sidenav">
                        <li>
                             <a href="#overview">Overview</a>
@@ -70,7 +70,7 @@
                             <a href="#license-faqs">License FAQs</a>
                         </li>
                    </ul>
-                </aside>
+                </div>
             </div>
             <div class="col-md-9" role="main">
                 <div class="bs-docs-section">
@@ -84,7 +84,7 @@
                         Bootstrap simply by including one additional CSS file. There are no style changes needed!
                     </p>
                     <p>
-                        In addition to the flattening, a <code>bootstrap-theme.css</code> stylesheet is also available. This stylesheet adds additional
+                        In addition to the flattening, a <code>bootstrap-flat-extras.css</code> stylesheet is also available. This stylesheet adds additional
                         (new) modern user interface elements and additional styles for some of the existing Bootstrap elements.
                     </p>
 
@@ -124,11 +124,11 @@
                         <h4>Install using NuGet</h4>
                         <p>To install Bootstrap Flat, run the following command in the <a href="http://docs.nuget.org/docs/start-here/using-the-package-manager-console">Package Manager Console</a>.
                         <div class="nuget-badge">
-						        <p>
-						            <code>PM&gt; Install-Package Twitter.Bootstrap.Flat
-						                                     -Pre
-						</code></p>
-						    </div>
+                                <p>
+                                    <code>PM&gt; Install-Package Twitter.Bootstrap.Flat
+                                                             -Pre
+                        </code></p>
+                            </div>
 
                     </div>
                 </div>
@@ -152,8 +152,8 @@
 +-- css/
 |   +-- bootstrap-flat.css
 |   +-- bootstrap-flat.min.css
-|   +-- bootstrap-theme.css
-|   +-- bootstrap-theme.min.css
+|   +-- bootstrap-flat-extras.css
+|   +-- bootstrap-flat-extras.min.css
 </code></pre>
                 </div>
 
