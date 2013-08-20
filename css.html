@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap-flat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple flat theme for Bootstrap 3">
+    <meta name="keywords" content="CSS3, Microsoft, Metro, Modern, Bootstrap, BS3, Flat, Theme">
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/docs.css" rel="stylesheet" />
+    <link href="./css/bootstrap-flat.min.css" rel="stylesheet" />
+    <link href="./css/bootstrap-flat-extras.min.css" rel="stylesheet" />
+    <link href="./css/docs-flat.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href=".css/ico/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target=".bs-sidebar">
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html" class="navbar-brand">Bootstrap Flat</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+                <li><a href="getting-started.html">Getting started</a></li>
+                <li class="active"><a href="css.html">CSS</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <div class="bs-header" id="content">
+        <div class="container">
+            <h1>CSS</h1>
+            <p>Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes.</p>
+        </div>
+    </div>
+
+    <div class="container bs-docs-container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="bs-sidebar" role="complementary">
+                    <ul class="nav bs-sidenav">
+                        <li><a href="#code">Code</a></li>
+                        <li>
+                            <a href="#forms">Forms</a>
+                            <ul class="nav">
+                                <li><a href="#forms-example">Basic example</a></li>
+                                <li><a href="#forms-inline">Inline variation</a></li>
+                                <li><a href="#forms-horizontal">Horizontal variation</a></li>
+                                <li><a href="#forms-controls">Supported controls</a></li>
+                                <li><a href="#forms-controls-static">Static form control</a></li>
+                                <li><a href="#forms-control-states">Control states</a></li>
+                                <li><a href="#forms-control-sizes">Control sizing</a></li>
+                                <li><a href="#forms-help-text">Help text</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#buttons">Buttons</a>
+                            <ul class="nav">
+                                <li><a href="#buttons-options">Button options</a></li>
+                                <li><a href="#buttons-sizes">Sizes</a></li>
+                                <li><a href="#buttons-disabled">Disabled</a></li>
+                                <li><a href="#buttons-tags">Button tags</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9" role="main">
+                <!-- Code
+                ================================================== -->
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="code">Code</h1>
+                    </div>
+
+                    <h2>Inline</h2>
+                    <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
+                    <div class="bs-example">
+                        For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+                    </div>
+                    <div class="highlight">
+                        <pre><code class="html">For example, <span class="nt">&lt;code&gt;</span><span class="ni">&amp;lt;</span>section<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> should be wrapped as inline.
+</code></pre>
+                    </div>
+
+                    <h2>Basic block</h2>
+                    <p>Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
+                    <div class="bs-example">
+                        <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+                    </div>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;pre&gt;</span><span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>Sample text here...<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span><span class="nt">&lt;/pre&gt;</span>
+</code></pre>
+                    </div>
+
+                    <p>You may optionally add the <code>.pre-scrollable</code> class, which will set a max-height of 350px and provide a y-axis scrollbar.</p>
+                </div>
+
+                <!-- Forms
+                ================================================== -->
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="forms">Forms</h1>
+                    </div>
+
+                    <h2 id="forms-example">Basic example</h2>
+                    <p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</p>
+                    <form class="bs-example" role="form">
+                        <fieldset>
+                            <legend>Legend</legend>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFile">File input</label>
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block">Example block-level help text here.</p>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Check me out
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </fieldset>
+                    </form><!-- /example -->
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">&quot;form&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;fieldset&gt;</span>
+                        <span class="nt">&lt;legend&gt;</span>Legend<span class="nt">&lt;/legend&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;exampleInputEmail1&quot;</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">id=</span><span class="s">&quot;exampleInputEmail1&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Enter email&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;exampleInputPassword1&quot;</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">id=</span><span class="s">&quot;exampleInputPassword1&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Password&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;exampleInputFile&quot;</span><span class="nt">&gt;</span>File input<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;file&quot;</span> <span class="na">id=</span><span class="s">&quot;exampleInputFile&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;help-block&quot;</span><span class="nt">&gt;</span>Example block-level help text here.<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span> Check me out
+                        <span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre>
+                    </div>
+
+
+                    <h3 id="forms-inline">Inline form</h3>
+                    <p>Add <code>.form-inline</code> for left-aligned and inline-block controls for a compact layout.</p>
+                    <div class="callout callout-danger">
+                        <h4>Requires custom widths</h4>
+                        <p>Inputs, selects, and textareas are 100% wide by default in Bootstrap. To use the inline form, you'll have to set a width on the form controls used within.</p>
+                    </div>
+                    <div class="callout callout-danger">
+                        <h4>Always add labels</h4>
+                        <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the <code>.sr-only</code> class.</p>
+                    </div>
+                    <form class="bs-example form-inline" role="form">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword2">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-default">Sign in</button>
+                    </form><!-- /example -->
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;form-inline&quot;</span> <span class="na">role=</span><span class="s">&quot;form&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span> <span class="na">for=</span><span class="s">&quot;exampleInputEmail2&quot;</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">id=</span><span class="s">&quot;exampleInputEmail2&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Enter email&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span> <span class="na">for=</span><span class="s">&quot;exampleInputPassword2&quot;</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">id=</span><span class="s">&quot;exampleInputPassword2&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Password&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span> Remember me
+                        <span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre>
+                    </div>
+
+                    <h2 id="forms-horizontal">Horizontal form</h2>
+                    <p>Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding <code>.form-horizontal</code> to the form. Doing so changes <code>.form-group</code>s to behave as grid rows, so no need for <code>.row</code>.</p>
+                    <form class="bs-example form-horizontal">
+                        <div class="form-group">
+                            <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="inputEmail1" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-10">
+                                <button type="submit" class="btn btn-default">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;form-horizontal&quot;</span> <span class="na">role=</span><span class="s">&quot;form&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;inputEmail1&quot;</span> <span class="na">class=</span><span class="s">&quot;col-lg-2 control-label&quot;</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-lg-10&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">id=</span><span class="s">&quot;inputEmail1&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Email&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;inputPassword1&quot;</span> <span class="na">class=</span><span class="s">&quot;col-lg-2 control-label&quot;</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-lg-10&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">id=</span><span class="s">&quot;inputPassword1&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Password&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-lg-offset-2 col-lg-10&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span> Remember me
+                        <span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-lg-offset-2 col-lg-10&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre>
+                    </div>
+
+
+                    <h2 id="forms-controls">Supported form controls</h2>
+                    <p>Examples of standard form controls supported in an example form layout.</p>
+
+                    <h3>Inputs</h3>
+                    <p>Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.</p>
+                    <div class="callout callout-danger">
+                        <h4>Type declaration required</h4>
+                        <p>Inputs will only be fully styled if their <code>type</code> is properly declared.</p>
+                    </div>
+                    <form class="bs-example">
+                        <input type="text" class="form-control" placeholder="Text input">
+                    </form>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Text input&quot;</span><span class="nt">&gt;</span>
+</code></pre>
+                    </div>
+
+                    <h3>Textarea</h3>
+                    <p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
+                    <form class="bs-example">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </form>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">rows=</span><span class="s">&quot;3&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+</code></pre>
+                    </div>
+
+                    <h3>Checkboxes and radios</h3>
+                    <p>Checkboxes are for selecting one or several options in a list while radios are for selecting one option from many.</p>
+                    <h4>Default (stacked)</h4>
+                    <form class="bs-example">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                Option one is this and that&mdash;be sure to include why it's great
+                            </label>
+                        </div>
+                        <br>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                Option one is this and that&mdash;be sure to include why it's great
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                Option two can be something else and selecting it will deselect option one
+                            </label>
+                        </div>
+                    </form>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+    Option one is this and that<span class="ni">&amp;mdash;</span>be sure to include why it&#39;s great
+                        <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;optionsRadios&quot;</span> <span class="na">id=</span><span class="s">&quot;optionsRadios1&quot;</span> <span class="na">value=</span><span class="s">&quot;option1&quot;</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    Option one is this and that<span class="ni">&amp;mdash;</span>be sure to include why it&#39;s great
+                        <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;optionsRadios&quot;</span> <span class="na">id=</span><span class="s">&quot;optionsRadios2&quot;</span> <span class="na">value=</span><span class="s">&quot;option2&quot;</span><span class="nt">&gt;</span>
+    Option two can be something else and selecting it will deselect option one
+                        <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+                    </div>
+
+                    <h4>Inline checkboxes</h4>
+                    <p>Use <code>.checkbox-inline</code> or <code>.radio-inline</code> class to a series of checkboxes or radios for controls appear on the same line.</p>
+                    <form class="bs-example">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+                        </label>
+                    </form>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;checkbox-inline&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;inlineCheckbox1&quot;</span> <span class="na">value=</span><span class="s">&quot;option1&quot;</span><span class="nt">&gt;</span> 1
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;checkbox-inline&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;inlineCheckbox2&quot;</span> <span class="na">value=</span><span class="s">&quot;option2&quot;</span><span class="nt">&gt;</span> 2
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;checkbox-inline&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;inlineCheckbox3&quot;</span> <span class="na">value=</span><span class="s">&quot;option3&quot;</span><span class="nt">&gt;</span> 3
+<span class="nt">&lt;/label&gt;</span>
+</code></pre>
+                    </div>
+
+                    <h3>Selects</h3>
+                    <p>Use the default option, or add <code>multiple</code> to show multiple options at once.</p>
+                    <form class="bs-example">
+                        <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <br>
+                        <select multiple class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </form>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
+                        <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
+                        <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
+                        <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
+                        <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
+<span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;select</span> <span class="na">multiple</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
+                        <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
+                        <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
+                        <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
+                        <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
+<span class="nt">&lt;/select&gt;</span>
+</code></pre>
+                    </div>
+
+
+                    <h2 id="forms-controls-static">Static text in horizontal forms</h2>
+                    <p>When you need to place regular, static text next to a form label within a horizontal form, use the <code>.form-control-static</code> class on a <code>&lt;p&gt;</code>.</p>
+                    <form class="bs-example form-horizontal">
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-10">
+                                <p class="form-control-static">email@example.com</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;form-horizontal&quot;</span> <span class="na">role=</span><span class="s">&quot;form&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;col-lg-2 control-label&quot;</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-lg-10&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;form-control-static&quot;</span><span class="nt">&gt;</span>email@example.com<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;inputPassword&quot;</span> <span class="na">class=</span><span class="s">&quot;col-lg-2 control-label&quot;</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-lg-10&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">id=</span><span class="s">&quot;inputPassword&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Password&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre>
+                    </div>
+
+
+                    <h2 id="forms-control-states">Form control states</h2>
+                    <p>Provide feedback to users or visitors with basic feedback states on form controls and labels.</p>
+
+                    <h3 id="forms-input-focus">Input focus</h3>
+                    <p>We remove the default <code>outline</code> styles on some form controls and apply a <code>box-shadow</code> in its place for <code>:focus</code>.</p>
+                    <form class="bs-example">
+                        <input class="form-control" id="focusedInput" type="text" value="This is focused...">
+                    </form>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">id=</span><span class="s">&quot;focusedInput&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">value=</span><span class="s">&quot;This is focused...&quot;</span><span class="nt">&gt;</span>
+</code></pre>
+                    </div>
+
+                    <h3 id="forms-disabled-inputs">Disabled inputs</h3>
+                    <p>Add the <code>disabled</code> attribute on an input to prevent user input and trigger a slightly different look.</p>
+                    <form class="bs-example">
+                        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+                    </form>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">id=</span><span class="s">&quot;disabledInput&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Disabled input here...&quot;</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+</code></pre>
+                    </div>
+
+                    <h3 id="forms-disabled-fieldsets">Disabled fieldsets</h3>
+                    <p>Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all the controls within the <code>&lt;fieldset&gt;</code> at once.</p>
+
+                    <div class="callout callout-warning">
+                        <h4>Link functionality of <code>&lt;a&gt;</code> not impacted</h4>
+                        <p>This class will only change the appearance of <code>&lt;a class="btn btn-default"&gt;</code> buttons, not their functionality. Use custom JavaScript to disable links here.</p>
+                    </div>
+
+                    <div class="callout callout-danger">
+                        <h4>Cross-browser compatibility</h4>
+                        <p>While Bootstrap will apply these styles in all browsers, Internet Explorer 9 and below don't actually support the <code>disabled</code> attribute on a <code>&lt;fieldset&gt;</code>. Use custom JavaScript to disable the fieldset in these browsers.</p>
+                    </div>
+
+                    <form class="bs-example">
+                        <fieldset disabled>
+                            <div class="form-group">
+                                <label for="disabledTextInput">Disabled input</label>
+                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                            </div>
+                            <div class="form-group">
+                                <label for="disabledSelect">Disabled select menu</label>
+                                <select id="disabledSelect" class="form-control">
+                                    <option>Disabled select</option>
+                                </select>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Can't check this
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </fieldset>
+                    </form>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">&quot;form-inline&quot;</span> <span class="na">role=</span><span class="s">&quot;form&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;fieldset</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;disabledTextInput&quot;</span><span class="nt">&gt;</span>Disabled input<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;disabledTextInput&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Disabled input&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;disabledSelect&quot;</span><span class="nt">&gt;</span>Disabled select menu<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;disabledSelect&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;option&gt;</span>Disabled select<span class="nt">&lt;/option&gt;</span>
+                        <span class="nt">&lt;/select&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span> Can&#39;t check this
+                        <span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre>
+                    </div>
+
+                    <h3 id="forms-validation">Validation states</h3>
+                    <p>Bootstrap includes validation styles for error, warning, and success states on form controls. To use, add <code>.has-warning</code>, <code>.has-error</code>, or <code>.has-success</code> to the parent element. Any <code>.control-label</code>, <code>.form-control</code>, and <code>.help-block</code> within that element will receive the validation styles.</p>
+
+                    <form class="bs-example">
+                        <div class="form-group has-warning">
+                            <label class="control-label" for="inputWarning">Input with warning</label>
+                            <input type="text" class="form-control" id="inputWarning">
+                        </div>
+                        <div class="form-group has-error">
+                            <label class="control-label" for="inputError">Input with error</label>
+                            <input type="text" class="form-control" id="inputError">
+                        </div>
+                        <div class="form-group has-success">
+                            <label class="control-label" for="inputSuccess">Input with success</label>
+                            <input type="text" class="form-control" id="inputSuccess">
+                        </div>
+                    </form>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group has-warning&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;control-label&quot;</span> <span class="na">for=</span><span class="s">&quot;inputWarning&quot;</span><span class="nt">&gt;</span>Input with warning<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">id=</span><span class="s">&quot;inputWarning&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group has-error&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;control-label&quot;</span> <span class="na">for=</span><span class="s">&quot;inputError&quot;</span><span class="nt">&gt;</span>Input with error<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">id=</span><span class="s">&quot;inputError&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group has-success&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;control-label&quot;</span> <span class="na">for=</span><span class="s">&quot;inputSuccess&quot;</span><span class="nt">&gt;</span>Input with success<span class="nt">&lt;/label&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">id=</span><span class="s">&quot;inputSuccess&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+                    </div>
+
+
+                    <h2 id="forms-control-sizes">Control sizing</h2>
+                    <p>Set heights using classes like <code>.input-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.</p>
+
+                    <h3>Height sizing</h3>
+                    <p>Create larger or smaller form controls that match button sizes.</p>
+                    <form class="bs-example bs-example-control-sizing">
+                        <div class="controls docs-input-sizes">
+                            <input class="form-control input-lg" type="text" placeholder=".input-lg">
+                            <input type="text" class="form-control" placeholder="Default input">
+                            <input class="form-control input-sm" type="text" placeholder=".input-sm">
+
+                            <select class="form-control input-lg">
+                                <option value="">.input-lg</option>
+                            </select>
+                            <select class="form-control">
+                                <option value="">Default select</option>
+                            </select>
+                            <select class="form-control input-sm">
+                                <option value="">.input-sm</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;form-control input-lg&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;.input-lg&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Default input&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;form-control input-sm&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;.input-sm&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">&quot;form-control input-lg&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">&quot;form-control input-sm&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/select&gt;</span>
+</code></pre>
+                    </div>
+
+                    <h3>Column sizing</h3>
+                    <p>Wrap inputs in grid columns, or any custom parent element, to easily enforce desired widths.</p>
+                    <form class="bs-example" style="padding-bottom: 15px;">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <input type="text" class="form-control" placeholder=".col-lg-2">
+                            </div>
+                            <div class="col-lg-3">
+                                <input type="text" class="form-control" placeholder=".col-lg-3">
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" placeholder=".col-lg-4">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-lg-2&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;.col-lg-2&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-lg-3&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;.col-lg-3&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-lg-4&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;.col-lg-4&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+                    </div>
+
+                    <h2 id="forms-help-text">Help text</h2>
+                    <p>Block level help text for form controls.</p>
+                    <form class="bs-example">
+                        <input type="text" class="form-control">
+                        <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                    </form>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;help-block&quot;</span><span class="nt">&gt;</span>A block of help text that breaks onto a new line and may extend beyond one line.<span class="nt">&lt;/span&gt;</span>
+</code></pre>
+                    </div>
+
+                </div>
+
+                <!-- Buttons
+                ================================================== -->
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="buttons">Buttons</h1>
+                    </div>
+
+                    <h2 id="buttons-options">Button options</h2>
+                    <p>Use any of the available button classes to quickly create a styled button.</p>
+                    <div class="bs-example">
+                        <button type="button" class="btn btn-default">Default</button>
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-success">Success</button>
+                        <button type="button" class="btn btn-info">Info</button>
+                        <button type="button" class="btn btn-warning">Warning</button>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                        <button type="button" class="btn btn-link">Link</button>
+                    </div>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="c">&lt;!-- Standard gray button with gradient --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+<span class="c">&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="c">&lt;!-- Indicates a successful or positive action --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-success&quot;</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="c">&lt;!-- Contextual button for informational alert messages --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-info&quot;</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="c">&lt;!-- Indicates caution should be taken with this action --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-warning&quot;</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="c">&lt;!-- Indicates a dangerous or potentially negative action --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-danger&quot;</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="c">&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-link&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span>
+</code></pre>
+                    </div>
+
+                    <p>Use any of the available button classes with <code>.btn-striped</code>
+                    to quickly create a button that has the style applied only to the left border.</p>
+                    <div class="bs-example">
+                        <button type="button" class="btn btn-default btn-striped">Default</button>
+                        <button type="button" class="btn btn-primary btn-striped">Primary</button>
+                        <button type="button" class="btn btn-success btn-striped">Success</button>
+                        <button type="button" class="btn btn-info btn-striped">Info</button>
+                        <button type="button" class="btn btn-warning btn-striped">Warning</button>
+                        <button type="button" class="btn btn-danger btn-striped">Danger</button>
+                    </div>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="c">&lt;!-- Standard gray button with gradient --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default btn-striped&quot;</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+<span class="c">&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary btn-striped&quot;</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="c">&lt;!-- Indicates a successful or positive action --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-success btn-striped&quot;</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="c">&lt;!-- Contextual button for informational alert messages --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-info btn-striped&quot;</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="c">&lt;!-- Indicates caution should be taken with this action --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-warning btn-striped&quot;</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="c">&lt;!-- Indicates a dangerous or potentially negative action --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-danger btn-striped&quot;</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+</code></pre>
+                    </div>
+
+                    <h2 id="buttons-sizes">Button sizes</h2>
+                    <p>Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.</p>
+                    <div class="bs-example">
+                        <p>
+                            <button type="button" class="btn btn-primary btn-striped btn-lg">Large button</button>
+                            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                            <button type="button" class="btn btn-default btn-lg">Large button</button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-primary btn-striped">Default button</button>
+                            <button type="button" class="btn btn-primary">Default button</button>
+                            <button type="button" class="btn btn-default">Default button</button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-primary btn-striped btn-sm">Small button</button>
+                            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                            <button type="button" class="btn btn-default btn-sm">Small button</button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-primary btn-striped btn-xs">Extra small button</button>
+                            <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+                            <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+                        </p>
+                    </div>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;p&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary btn-lg&quot;</span><span class="nt">&gt;</span>Large button<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default btn-lg&quot;</span><span class="nt">&gt;</span>Large button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary btn-sm&quot;</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default btn-sm&quot;</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary btn-xs&quot;</span><span class="nt">&gt;</span>Extra small button<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default btn-xs&quot;</span><span class="nt">&gt;</span>Extra small button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+</code></pre>
+                    </div>
+
+                    <p>Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block</code>.</p>
+                    <div class="bs-example">
+                        <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                            <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary btn-lg btn-block&quot;</span><span class="nt">&gt;</span>Block level button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default btn-lg btn-block&quot;</span><span class="nt">&gt;</span>Block level button<span class="nt">&lt;/button&gt;</span>
+</code></pre>
+                    </div>
+
+
+                    <h2 id="buttons-disabled">Disabled state</h2>
+                    <p>Make buttons look unclickable by fading them back 50%.</p>
+
+                    <h3>Button element</h3>
+                    <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
+                    <p class="bs-example">
+                        <button type="button" class="btn btn-primary btn-striped btn-lg" disabled="disabled">Primary button</button>
+                        <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Primary button</button>
+                        <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+                    </p>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-lg btn-primary&quot;</span> <span class="na">disabled=</span><span class="s">&quot;disabled&quot;</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default btn-lg&quot;</span> <span class="na">disabled=</span><span class="s">&quot;disabled&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+</code></pre>
+                    </div>
+
+                    <div class="callout callout-danger">
+                        <h4>Cross-browser compatibility</h4>
+                        <p>If you add the <code>disabled</code> attribute to a <code>&lt;button&gt;</code>, Internet Explorer 9 and below will render text gray with a nasty text-shadow that we cannot fix.</p>
+                    </div>
+
+                    <h3>Anchor element</h3>
+                    <p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
+                    <p class="bs-example">
+                        <a href="#" class="btn btn-primary btn-striped btn-lg disabled">Primary link</a>
+                        <a href="#" class="btn btn-primary btn-lg disabled">Primary link</a>
+                        <a href="#" class="btn btn-default btn-lg disabled">Link</a>
+                    </p>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary btn-lg disabled&quot;</span><span class="nt">&gt;</span>Primary link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default btn-lg disabled&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+</code></pre>
+                    </div>
+                    <p>
+                        We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required.
+                    </p>
+                    <div class="callout callout-warning">
+                        <h4>Link functionality not impacted</h4>
+                        <p>This class will only change the <code>&lt;a&gt;</code>'s appearance, not its functionality. Use custom JavaScript to disable links here.</p>
+                    </div>
+
+
+                    <h2 id="buttons-tags">Using multiple tags</h2>
+                    <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+                    <form class="bs-example">
+                        <a class="btn btn-default" href="#">Link</a>
+                        <button class="btn btn-default" type="submit">Button</button>
+                        <input class="btn btn-default" type="button" value="Input">
+                        <input class="btn btn-default" type="submit" value="Submit">
+                    </form>
+                    <div class="highlight">
+                        <pre><code class="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">value=</span><span class="s">&quot;Input&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Submit&quot;</span><span class="nt">&gt;</span>
+</code></pre>
+                    </div>
+
+                    <div class="callout callout-warning">
+                        <h4>Cross-browser rendering</h4>
+                        <p>As a best practice, <strong>we highly recommend using the <code>&lt;button&gt;</code> element whenever possible</strong> to ensure matching cross-browser rendering.</p>
+                        <p>Among other things, there's <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=697451">a Firefox bug</a> that prevents us from setting the <code>line-height</code> of <code>&lt;input&gt;</code>-based buttons, causing them to not exactly match the height of other buttons on Firefox.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+    <footer>
+        <div class="container">
+            <p>
+                &copy; 2013 <a href="http://github.com/scottdorman/bootstrap-flat">Bootstrap-flat</a> by
+                <a href="http://about.me/scottdorman">Scott Dorman</a>.
+            </p>
+        </div>
+    </footer>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/application.js"></script>
+</body>
+</html>
