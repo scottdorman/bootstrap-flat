@@ -55,9 +55,8 @@
 .callout {
   margin: 20px 0;
   padding: 15px 30px 15px 15px;
-  background-color: #fefbed;
-  border-color: #f1e7bc;
-  border-left: 4px solid #f1e7bc;
+  border: 1px solid transparent;
+  border-left-width: 4px;
 }
 
 .callout h4 {
@@ -65,13 +64,8 @@
   color: inherit;
 }
 
-.callout hr {
-  border-top-color: #f8e5be;
-}
-
 .callout .callout-link {
   font-weight: bold;
-  color: #a47e3c;
 }
 
 .callout > p,
@@ -96,19 +90,6 @@
   color: #356635;
 }
 
-.callout-danger {
-  background-color: #fcf2f2;
-  border-color: #dFb5b4;
-}
-
-.callout-danger hr {
-  border-top-color: #e6c1c7;
-}
-
-.callout-danger .callout-link {
-  color: #953b39;
-}
-
 .callout-info {
   background-color: #f0f7fd;
   border-color: #d0e3f0;
@@ -120,4 +101,30 @@
 
 .callout-info .callout-link {
   color: #2d6987;
+}
+
+.callout-warning {
+  background-color: #fefbed;
+  border-color: #f1e7bc;
+}
+
+.callout-warning hr {
+  border-top-color: #f8e5be;
+}
+
+.callout-warning .callout-link {
+  color: #a47e3c;
+}
+
+.callout-danger {
+  background-color: #fcf2f2;
+  border-color: #dFb5b4;
+}
+
+.callout-danger hr {
+  border-top-color: #e6c1c7;
+}
+
+.callout-danger .callout-link {
+  color: #953b39;
 }
