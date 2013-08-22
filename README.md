@@ -1,7 +1,7 @@
 bootstrap-flat
 ==============
 
-A simple flat theme for Twitter Bootstrap 3. To see Bootstrap flat in action, check out the [documentation](http://scottdorman.github.io/bootstrap-flat).
+A simple flat theme for [Twitter Bootstrap](http://getbootstrap.com) 3. To see Bootstrap flat in action, check out the [documentation](http://scottdorman.github.io/bootstrap-flat).
 
 ****
 
