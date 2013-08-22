@@ -5,7 +5,7 @@ A simple flat theme for [Twitter Bootstrap](http://getbootstrap.com) 3. To see B
 
 ****
 
-While Bootstrap 3 does away with the skeumorphic design characteristics of earlier versions, making it mostly a flat design, it doesn't completely embrace the "modern" design elements (inspired by Microsoft's Modern Design Language of Windows Phone and Windows 8) and still includes soft, rounded edges on many of the UI elements.
+While Bootstrap 3 does away with the glossy and gradient characteristics of earlier versions, making it mostly a flat design, it doesn't completely embrace the "modern" design elements (inspired by Microsoft's Modern Design Language of Windows Phone and Windows 8) and still includes soft, rounded edges on many of the UI elements.
 
 There are several other "flat" or "modern" skins for Bootstrap but they are completely custom Bootstrap implementations and in most cases include their own, modified, version of bootstrap.css. This makes it difficult to upgrade to newer versions of Bootstrap as it's dependent on those skins being updated as well.
 
