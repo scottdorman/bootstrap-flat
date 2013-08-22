@@ -1,4 +1,4 @@
-bootstrap-flat
+Bootstrap Flat
 ==============
 
 A simple flat theme for [Twitter Bootstrap](http://getbootstrap.com) 3. To see Bootstrap flat in action, check out the [documentation](http://scottdorman.github.io/bootstrap-flat).
@@ -11,6 +11,4 @@ There are several other "flat" or "modern" skins for Bootstrap but they are comp
 
 This project aims to change that and is built using Bootstrap's recommended method of providing "light" customizations. In other words, there have been absolutely no functional changes to Bootstrap but only surface layer visual changes. There are no custom colors, custom controls, or custom JavaScript files to include.
 
-To simply achieve the standard Bootstrap 3 look with a completely flat user interface (no rounded edges), you need to include the bootstrap-flat.css file after you include the Bootstrap source.
-
-If you want some additional custom styles, include the bootstrap-theme.css after you include the Bootstrap source. Right now (more to come), this only adds a custom themed button style .btn-striped that will apply the Bootstrap button color (from .btn-danger, .btn.warning, etc.) and turn it into a left-vertical stripe.
+To simply achieve the standard Bootstrap 3 look with a completely flat user interface, you need to include the bootstrap-flat.css file after you include the Bootstrap source. If you want some additional custom styles, include the bootstrap-flat-extras.css stylesheet after you include the Bootstrap and Bootstrap Flat stylesheets.
