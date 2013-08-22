@@ -47,5 +47,5 @@ For more information on SemVer, please visit [http://semver.org/](http://semver.
 
 ## Copyright and license
 
-Copyright 2013 Scott Dorman, Inc under [the Apache 2.0 license](LICENSE).
+Copyright 2013 Scott Dorman under [the Apache 2.0 license](LICENSE).
 
