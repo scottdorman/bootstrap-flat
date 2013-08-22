@@ -12,3 +12,40 @@ There are several other "flat" or "modern" skins for Bootstrap but they are comp
 This project aims to change that and is built using Bootstrap's recommended method of providing "light" customizations. In other words, there have been absolutely no functional changes to Bootstrap but only surface layer visual changes. There are no custom colors, custom controls, or custom JavaScript files to include.
 
 To simply achieve the standard Bootstrap 3 look with a completely flat user interface, you need to include the bootstrap-flat.css file after you include the Bootstrap source. If you want some additional custom styles, include the bootstrap-flat-extras.css stylesheet after you include the Bootstrap and Bootstrap Flat stylesheets.
+
+## Bugs and feature requests
+
+Have a bug or a feature request? [Please open a new issue](https://github.com/scottdorman/bootstrap-flat/issues). Before opening any issue, please search for existing issues and read the [Issue Guidelines](https://github.com/necolas/issue-guidelines), written by [Nicolas Gallagher](https://github.com/necolas/).
+
+
+
+## Versioning
+
+For transparency and insight into our release cycle, and for striving to maintain backward compatibility, Bootstrap will be maintained under the Semantic Versioning guidelines as much as possible.
+
+Releases will be numbered with the following format:
+
+`<major>.<minor>.<patch>`
+
+And constructed with the following guidelines:
+
+* Breaking backward compatibility bumps the major (and resets the minor and patch)
+* New additions without breaking backward compatibility bumps the minor (and resets the patch)
+* Bug fixes and misc changes bumps the patch
+
+For more information on SemVer, please visit [http://semver.org/](http://semver.org/).
+
+
+
+## Authors
+
+**Scott Dorman**
+
++ [http://twitter.com/sdorman](http://twitter.com/sdorman)
++ [http://github.com/scottdorman](http://github.com/scottdorman)
+
+
+## Copyright and license
+
+Copyright 2013 Twitter, Inc under [the Apache 2.0 license](LICENSE).
+
