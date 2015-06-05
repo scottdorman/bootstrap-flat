@@ -1,0 +1,40 @@
+ .callout {
+    margin: 20px 0;
+    padding: 15px 30px 15px 15px;
+    border: none;
+    border-left: 4px solid transparent;
+
+    h4 {
+        margin-top: 0;
+        color: inherit;
+    }
+
+    .callout-link {
+        font-weight: bold;
+    }
+
+    > p,
+    > ul {
+        margin-bottom: 0;
+    }
+
+    > p + p {
+            margin-top: 5px;
+        }
+}
+
+.callout-success {
+    .callout-variant(#356635; #e7fadf; #b9ceab; #c9e2b3)
+}
+
+.callout-info {
+    .callout-variant(#2d6987; #f0f7fd; #d0e3f0; #a6e1ec)
+}
+
+.callout-warning {
+    .callout-variant(#a47e3c; #fefbed; #f1e7bc; #f8e5be)
+}
+
+.callout-danger {
+    .callout-variant(#953b39; #fcf2f2; #dFb5b4; #e6c1c7)
+}

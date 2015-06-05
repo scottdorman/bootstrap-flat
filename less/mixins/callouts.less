@@ -1,0 +1,24 @@
+.callout-variant(@color)
+{
+  border-left-color: @color;
+  
+  h4 {
+    color: @color;
+  }
+}
+
+.callout-variant(@color; @background; @border; @dark-border)
+{
+  & {
+    background-color: @background;
+    border-color: @border;
+
+    hr {
+        border-top-color: @dark-border;
+    }
+
+    .callout-link {
+        color: @color;
+    }
+  }
+}

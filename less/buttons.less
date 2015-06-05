@@ -1,0 +1,64 @@
+/* Modify the button style to apply a 3px colored stripe down the left side.
+ * Inspired by css3-microsoft-metro-buttons (https://github.com/ace-subido/css3-microsoft-metro-buttons)
+ */
+.btn-striped {
+    color: @btn-default-color;
+    background-color: @btn-default-bg;
+    border-left-width: 3px;
+    border-right: 1px solid @btn-default-border;
+    border-top: 1px solid @btn-default-border;
+    border-bottom: 1px solid @btn-default-border;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: @btn-default-color;
+        background-color: #ebebeb;
+        border-right: 1px solid darken(@btn-default-border, 12%);
+        border-top: 1px solid darken(@btn-default-border, 12%);
+        border-bottom: 1px solid darken(@btn-default-border, 12%);
+    }
+
+    &.disabled, &[disabled], fieldset[disabled] &,
+    &.disabled:hover, &[disabled]:hover, fieldset[disabled] &:hover,
+    &.disabled:focus, &[disabled]:focus, fieldset[disabled] &:focus,
+    &.disabled:active, &[disabled]:active, fieldset[disabled] &:active,
+    &.disabled.active, &[disabled].active, fieldset[disabled] &.active {
+        background-color: @btn-default-bg;
+        border-right: 1px solid @btn-default-border;
+        border-top: 1px solid @btn-default-border;
+        border-bottom: 1px solid @btn-default-border;
+    }
+}
+
+.btn-striped-right {
+    color: #333333;
+    background-color: #ffffff;
+    border-right-width: 3px;
+    border-left: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: #333333;
+        background-color: #ebebeb;
+        border-left: 1px solid #adadad;
+        border-top: 1px solid #adadad;
+        border-bottom: 1px solid #adadad;
+    }
+
+    &.disabled, &[disabled], fieldset[disabled] &,
+    &.disabled:hover, &[disabled]:hover, fieldset[disabled] &:hover,
+    &.disabled:focus, &[disabled]:focus, fieldset[disabled] &:focus,
+    &.disabled:active, &[disabled]:active, fieldset[disabled] &:active,
+    &.disabled.active, &[disabled].active, fieldset[disabled] &.active {
+        background-color: #ffffff;
+        border-left: 1px solid #cccccc;
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+    }
+}
