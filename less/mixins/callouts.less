@@ -1,24 +1,19 @@
-.callout-variant(@color)
-{
-  border-left-color: @color;
-  
-  h4 {
-    color: @color;
-  }
-}
+// Callout related shortcuts
 
-.callout-variant(@color; @background; @border; @dark-border)
-{
-  & {
-    background-color: @background;
-    border-color: @border;
+@import (reference) "..\variables.less";
 
-    hr {
-        border-top-color: @dark-border;
+.callout-variant(@color) {
+    border-left-color: @color;
+    border-left-width: @callout-border-width;
+
+    &.callout-striped-right {
+        border-left-color: @callout-border-color;
+        border-left-width: 1px;
+        border-right-color: @color;
+        border-right-width: @callout-border-width;
     }
 
-    .callout-link {
+    h4 {
         color: @color;
     }
-  }
 }
