@@ -1,0 +1,117 @@
+@import (reference) "variables.less";
+@import (reference) "mixins.less";
+
+/*
+ * Social icons
+ *
+ * Social icons turns list items into inline-block with custom hover effects
+ * and backgrounds.
+ */
+.list-social-icons {
+    padding-left: 0;
+    list-style: none;
+
+    > li {
+        display: inline-block;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 3px;
+        margin-right: 3px;
+        text-align: center;
+        opacity: 0.4;
+        background: @gray-darker;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            opacity: 1;
+            .transition(0.1s);
+        }
+
+        a {
+            color: #fff;
+            display: block;
+            .list-social-icons-variant(@social-icons-base-size, @social-icons-base-text-size);
+        }
+
+        &.rss {
+            background: @social-icons-rss-bg;
+        }
+
+        &.facebook {
+            background: @social-icons-facebook-bg;
+        }
+
+        &.twitter {
+            background: @social-icons-twitter-bg;
+        }
+
+        &.plus {
+            background: @social-icons-plus-bg;
+        }
+
+        &.vk {
+            background: @social-icons-vk-bg;
+        }
+
+        &.pinterest {
+            background: @social-icons-pinterest-bg;
+        }
+
+        &.vimeo {
+            background: @social-icons-vimeo-bg;
+        }
+
+        &.github {
+            background: @social-icons-github-bg;
+        }
+
+        &.linkedin {
+            background: @social-icons-linkedin-bg;
+        }
+
+        &.dropbox {
+            background: @social-icons-dropbox-bg;
+        }
+    }
+}
+
+.list-social-icons-sm {
+    > li a {
+        .list-social-icons-variant(@social-icons-base-size / 2, @social-icons-base-text-size / 2);
+    }
+}
+
+.list-social-icons-lg {
+    > li a {
+        .list-social-icons-variant(@social-icons-base-size * 2, @social-icons-base-text-size * 2);
+    }
+}
+
+.list-social-icons-xl {
+    > li a {
+        .list-social-icons-variant(@social-icons-base-size * 3, @social-icons-base-text-size * 3);
+    }
+}
+
+.list-social-icons-bright {
+    > li {
+        opacity: 1;
+    }
+}
+
+.list-social-icons-dim {
+    > li {
+        opacity: 0.4;
+
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+}

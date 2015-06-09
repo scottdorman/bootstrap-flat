@@ -1,0 +1,89 @@
+@import (reference) "variables.less";
+@import (reference) "mixins.less";
+
+/*
+ * Form inputs
+ *
+ * Additional formatting for form inputs, including a switch (toggle) style for checkboxes and radio buttons.
+ * Requires a base and modifier class.
+ */
+.switch-input {
+    display: block;
+    position: relative;
+    line-height: 1;
+    margin-bottom: 4px;
+    padding: 10px 60px 0 0;
+    cursor: pointer;
+
+    input {
+        position: absolute;
+        left: -9999px;
+
+        &:checked + i {
+            border-color: @input-border;
+
+            &:before {
+                right: 33px;
+            }
+
+            &:after {
+                content: attr(data-swon-text);
+                text-align: right;
+                color: #777;
+            }
+        }
+    }
+
+    &.disabled i {
+        cursor: @cursor-disabled;
+
+        &:before {
+            background-color: @input-bg-disabled;
+        }
+    }
+
+    i {
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: 0;
+        .size(50px, 20px);
+        border: 1px solid @input-border;
+        background: #fff;
+        font-style: normal;
+
+        &:before {
+            border-radius: 0;
+            .transition-property(right);
+            .transition-duration(0.1s);
+            .transition-timing-function(ease-in);
+            content: '';
+            display: block;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            .square(10px);
+            background-color: #406da4;
+        }
+
+        &:after {
+            content: attr(data-swoff-text);
+            position: absolute;
+            top: 2px;
+            right: 8px;
+            left: 8px;
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 15px;
+            color: #aaa;
+        }
+    }
+}
+
+.switch {
+    text-align: center;
+}

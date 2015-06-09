@@ -1,40 +1,68 @@
- .callout {
-    margin: 20px 0;
-    padding: 15px 30px 15px 15px;
-    border: none;
-    border-left: 4px solid transparent;
+@import (reference) "variables.less";
+@import (reference) "mixins.less";
 
+/*
+ * Alerts
+ *
+ * An alternative alert format, with either a left or right border.
+ * Requires a base alert class.
+ */
+.alert {
+    .alert-striped-left {
+        border-left: @callout-border-width solid;
+    }
+
+    .alert-striped-right {
+        border-right: @callout-border-width solid;
+    }
+}
+
+/*
+ * Callouts
+ *
+ * Not quite alerts, but custom and helpful notes.
+ * Requires a base and modifier class.
+ */
+.callout {
+    padding: @callout-padding;
+    margin: @callout-margin 0;
+    border: 1px solid @callout-border-color;
+    border-radius: @callout-border-radius;
+
+    // Headings for larger alerts
     h4 {
         margin-top: 0;
-        color: inherit;
+        margin-bottom: 5px;
     }
 
-    .callout-link {
-        font-weight: bold;
-    }
-
-    > p,
-    > ul {
+    p:last-child {
         margin-bottom: 0;
     }
+    // Tighten up space between multiple callouts
+    & + & {
+        margin-top: -5px;
+    }
+}
 
-    > p + p {
-            margin-top: 5px;
-        }
+// Alternate styles
+//
+// Generate contextual modifier classes for colorizing the alert.
+.callout-primary {
+    .callout-variant(@callout-primary-bg);
 }
 
 .callout-success {
-    .callout-variant(#356635; #e7fadf; #b9ceab; #c9e2b3)
+    .callout-variant(@callout-success-bg);
 }
 
 .callout-info {
-    .callout-variant(#2d6987; #f0f7fd; #d0e3f0; #a6e1ec)
+    .callout-variant(@callout-info-bg);
 }
 
 .callout-warning {
-    .callout-variant(#a47e3c; #fefbed; #f1e7bc; #f8e5be)
+    .callout-variant(@callout-warning-bg);
 }
 
 .callout-danger {
-    .callout-variant(#953b39; #fcf2f2; #dFb5b4; #e6c1c7)
+    .callout-variant(@callout-danger-bg);
 }

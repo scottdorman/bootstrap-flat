@@ -1,0 +1,21 @@
+@import (reference) "variables.less";
+@import (reference) "mixins.less";
+
+/*
+ * Boxed content
+ *
+ * An alternative formatting for blockquotes to be used as testimonials.
+ */
+.testimonial {
+    footer {
+        padding-top: 20px;
+
+        &:before {
+            content: none;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+        }
+    }
+}
