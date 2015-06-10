@@ -1,0 +1,16 @@
+[
+  {
+    "outputFile": "css/bootstrap-flat-extras.css",
+    "inputFile": "less/bootstrap-flat-extras.less",
+    "minify": true,
+    "includeInProject": true,
+    "sourceMap": false
+  },
+  {
+    "outputFile": "css/bootstrap-flat.css",
+    "inputFile": "less/bootstrap-flat.less",
+    "minify": true,
+    "includeInProject": true,
+    "sourceMap": false
+  }
+]
