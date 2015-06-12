@@ -1,0 +1,33 @@
+<div class="bs-docs-section">
+  <h1 id="callouts" class="page-header">Callouts</h1>
+  <p class="lead">Provide contextual messages for users with the handful of available and flexible callouts.</p>
+
+  <h2 id="callouts-examples">Examples</h2>
+  <p>Wrap any text in <code>.callout</code> and one of the four contextual classes (e.g., <code>.callout-success</code>) for basic callout messages.</p>
+
+  <div class="callout callout-info" id="callouts-alerts-no-default">
+    <h4>No default class</h4>
+    <p>Callouts don't have default classes, only base and modifier classes, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.</p>
+  </div>
+
+  <div class="bs-example" data-example-id="simple-callouts">
+    <div class="callout callout-success" role="callout">
+      <strong>Well done!</strong> You successfully read this important alert message.
+    </div>
+    <div class="callout callout-info" role="callout">
+      <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+    </div>
+    <div class="callout callout-warning" role="callout">
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </div>
+    <div class="callout callout-danger" role="callout">
+      <strong>Oh snap!</strong> Change a few things up and try submitting again.
+    </div>
+  </div>
+{% highlight html %}
+<div class="callout callout-success" role="callout">...</div>
+<div class="callout callout-info" role="callout">...</div>
+<div class="callout callout-warning" role="callout">...</div>
+<div class="callout callout-danger" role="callout">...</div>
+{% endhighlight %}
+</div>
