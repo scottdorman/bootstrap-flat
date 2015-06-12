@@ -163,11 +163,20 @@ kbd {
 .pagination {
     border-radius: 0;
 
-    > li:first-child > a,
-    > li:first-child > span,
-    > li:last-child > a,
-    > li:last-child > span {
-        .border-right-radius(0);
+    > li {
+        &:first-child {
+            > a,
+            > span {
+                .border-left-radius(0);
+            }
+        }
+
+        &:last-child {
+            > a,
+            > span {
+                .border-right-radius(0);
+            }
+        }
     }
 }
 
