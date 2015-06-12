@@ -4,141 +4,78 @@
 /*
  * Pricing plans
  *
- * Extends a panel to represent a pricing plan.
- * Requires a base panel class.
+ * Responsive pricing plans, similar in structure to panels.
  */
-.pricing-tables {
-    h1 {
-        font-size: 48px;
-    }
+
+.pricing-plans, .pricing-plan-single {
+    text-align: center;
+    .pricing-plan-footer();
 }
 
-.panel.pricing-plan {
-    min-height: 100px;
-    background: @pricing-plan-background-color;
-    margin: 20px 0;
-    padding-bottom: 25px;
-    border-color: @pricing-plan-border-color;
+.pricing-plan {
+    .pricing-plan-body();
+}
 
-    .panel-heading {
-        text-align: center;
-        padding: 12px 16px;
-        background: @pricing-plan-header-background-color;
-        color: @pricing-plan-header-text-color;
-    }
+.pricing-plans {
+    .pricing-plan-heading(50px);
 
-    .panel-title {
-        padding: 0;
-        margin: 0;
-        font-weight: 100;
-        font-size: 30px;
-    }
+    .pricing-plan {
+        padding: 50px 15px;
+        margin: 0 10px 30px 10px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 0;
 
-    .panel-body {
-        padding-bottom: 0;
+        .pricing-plan-price(2.5em);
 
-        ul {
-            list-style-type: none;
-            padding: 5px;
+        &-title {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: ceil((@font-size-base * 1.125));
+            color: inherit;
 
-            li {
-                line-height: 24px;
-                font-size: 14px;
-                font-weight: 400;
-
-                a {
-                    text-decoration: underline;
-                    color: #e6e9ed;
-                }
-            }
-        }
-    }
-
-    .panel-footer {
-        background-color: transparent;
-        border-top: 1px solid #eee;
-        padding-top: 0;
-        margin: 0 auto;
-        width: 80%;
-        text-align: center;
-
-        h3 {
-            font-size: 60px;
-            vertical-align: top;
-            line-height: 1;
-
-            .symbol {
-                font-size: 28px;
-                vertical-align: top;
-                position: relative;
-                margin: 6px 0 0 -7px;
-                display: inline-block;
-            }
-
-            small {
+            .icon {
                 display: block;
-                color: #aaa;
-                font-size: 14px;
-            }
-        }
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                margin-bottom: 15px;
+                font-size: 48px;
+                background: #ccc;
 
-        .btn {
-            margin-top: 10px;
-            padding: 10px 30px;
-            text-transform: uppercase;
-            font-weight: 500;
-        }
-    }
-}
-
-.panel.pricing-plan-recommended {
-    border-color: @pricing-plan-recommended-border-color;
-    background-color: @pricing-plan-recommended-background-color;
-
-    .panel-heading {
-        background: @pricing-plan-recommended-border-color;
-    }
-}
-
-@media (max-width: 991px) {
-    .panel.pricing-plan {
-        .panel-footer {
-            h3 {
-                font-size: 50px;
-
-                .symbol {
-                    font-size: 20px;
+                &:before {
+                    line-height: 100px;
                 }
             }
         }
+        
+        @media screen and (max-width: 992px) {
+            margin-left: 0;
+            margin-right: 0;
+            padding: 50px 5px 30px 5px;
+        }
+
+        @media screen and (max-width: 768px) {
+            top: -2em;
+            right: 0;
+        }
     }
 }
 
+.pricing-plan-single {
+    .pricing-plan-heading();
 
+    .pricing-plan {
+        width: 80%;
+        margin: 40px auto;
+        padding: 30px;
+        border-bottom: 1px solid #ccc;
+        background: #fff;
 
+        .pricing-plan-price(5em);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}

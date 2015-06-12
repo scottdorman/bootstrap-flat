@@ -1,0 +1,64 @@
+﻿// Pricing plan shortcuts
+
+@import (reference) "..\variables.less";
+@import (reference) "size.less";
+
+.pricing-plan-price(@size) {
+    &-price {
+        display: block;
+        line-height: 2.3;
+        font-size: @size;
+        font-weight: 700;
+
+        small {
+            font-size: 0.5em;
+            font-weight: normal;
+
+            &:before {
+                content: "@{pricing-plan-price-duration-separator}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+                padding: 0;
+                color: @pricing-plan-price-duration-separator-color;
+            }
+        }
+
+        sup {
+            font-size: 0.5em;
+        }
+    }
+}
+
+.pricing-plan-heading(@margin: 0) {
+    .pricing-plan-heading {
+        margin-bottom: @margin;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.pricing-plan-footer() {
+    .pricing-plan-footer {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #cccccc;
+        text-align: center;
+    }
+}
+
+.pricing-plan-body() {
+    &-body {
+        ul {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 30px;
+            margin-top: 10px;
+            text-align: left;
+
+            & > li {
+                margin-bottom: 10px;
+            }
+
+            @media screen and (max-width: 480px) {
+                text-align: center;
+            }
+        }
+    }
+}
