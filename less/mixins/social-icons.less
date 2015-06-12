@@ -3,13 +3,13 @@
 @import (reference) "..\variables.less";
 @import (reference) "size.less";
 
-.list-social-icons-variant(@size, @font-size) {
+.list-social-icons-variant(@size; @font-size) {
     .square(@size);
     font-size: @font-size;
     line-height: @size;
 }
 
-.list-social-icons-icon(@icon, @background) {
+.list-social-icons-icon(@icon; @background) {
     background: @background;
 
     &:after {

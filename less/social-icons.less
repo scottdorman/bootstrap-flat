@@ -45,7 +45,7 @@
         a {
             color: #fff;
             display: block;
-            .list-social-icons-variant(@social-icons-base-size, @social-icons-base-text-size);
+            .list-social-icons-variant(@social-icons-base-size; @social-icons-base-text-size);
 
             &:after {
                 display: inline-block;
@@ -66,43 +66,43 @@
             }
 
             &.rss {
-                .list-social-icons-icon(@social-icon-rss, @social-icon-rss-bg);
+                .list-social-icons-icon(@social-icon-rss; @social-icon-rss-bg);
             }
 
             &.facebook {
-                .list-social-icons-icon(@social-icon-facebook, @social-icon-facebook-bg);
+                .list-social-icons-icon(@social-icon-facebook; @social-icon-facebook-bg);
             }
 
             &.twitter {
-                .list-social-icons-icon(@social-icon-twitter, @social-icon-twitter-bg);
+                .list-social-icons-icon(@social-icon-twitter; @social-icon-twitter-bg);
             }
 
             &.plus {
-                .list-social-icons-icon(@social-icon-google-plus, @social-icon-googleplus-bg);
+                .list-social-icons-icon(@social-icon-google-plus; @social-icon-googleplus-bg);
             }
 
             &.vk {
-                .list-social-icons-icon(@social-icon-vk, @social-icon-vk-bg);
+                .list-social-icons-icon(@social-icon-vk; @social-icon-vk-bg);
             }
 
             &.pinterest {
-                .list-social-icons-icon(@social-icon-pinterest, @social-icon-pinterest-bg);
+                .list-social-icons-icon(@social-icon-pinterest; @social-icon-pinterest-bg);
             }
 
             &.vimeo {
-                .list-social-icons-icon(@social-icon-vimeo-square, @social-icon-vimeo-bg);
+                .list-social-icons-icon(@social-icon-vimeo-square; @social-icon-vimeo-bg);
             }
 
             &.github {
-                .list-social-icons-icon(@social-icon-github-alt, @social-icon-github-bg);
+                .list-social-icons-icon(@social-icon-github-alt; @social-icon-github-bg);
             }
 
             &.linkedin {
-                .list-social-icons-icon(@social-icon-linkedin, @social-icon-linkedin-bg);
+                .list-social-icons-icon(@social-icon-linkedin; @social-icon-linkedin-bg);
             }
 
             &.dropbox {
-                .list-social-icons-icon(@social-icon-dropbox, @social-icon-dropbox-bg);
+                .list-social-icons-icon(@social-icon-dropbox; @social-icon-dropbox-bg);
             }
         }
     }
@@ -110,19 +110,19 @@
 
 .list-social-icons-sm {
     > li a {
-        .list-social-icons-variant(@social-icons-base-size / 2, @social-icons-base-text-size / 2);
+        .list-social-icons-variant(@social-icons-base-size / 2; @social-icons-base-text-size / 2);
     }
 }
 
 .list-social-icons-lg {
     > li a {
-        .list-social-icons-variant(@social-icons-base-size * 2, @social-icons-base-text-size * 2);
+        .list-social-icons-variant(@social-icons-base-size * 2; @social-icons-base-text-size * 2);
     }
 }
 
 .list-social-icons-xl {
     > li a {
-        .list-social-icons-variant(@social-icons-base-size * 3, @social-icons-base-text-size * 3);
+        .list-social-icons-variant(@social-icons-base-size * 3; @social-icons-base-text-size * 3);
     }
 }
 
