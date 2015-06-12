@@ -1,16 +1,22 @@
 [
   {
-    "outputFile": "css/bootstrap-flat-extras.css",
-    "inputFile": "less/bootstrap-flat-extras.less",
-    "minify": true,
-    "includeInProject": true,
-    "sourceMap": false
-  },
-  {
     "outputFile": "css/bootstrap-flat.css",
     "inputFile": "less/bootstrap-flat.less",
-    "minify": true,
+    "minify": {
+      "enabled": true
+    },
     "includeInProject": true,
-    "sourceMap": false
+    "sourceMap": false,
+    "options": {}
+  },
+  {
+    "outputFile": "css/bootstrap-flat-extras.css",
+    "inputFile": "less/bootstrap-flat-extras.less",
+    "minify": {
+      "enabled": true
+    },
+    "includeInProject": true,
+    "sourceMap": false,
+    "options": {}
   }
 ]
