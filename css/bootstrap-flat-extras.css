@@ -656,10 +656,10 @@ fieldset[disabled] .btn-danger.btn-outline.active {
  * Requires a base alert class.
  */
 
-.alert .alert-striped-left {
+.alert.alert-striped-left {
   border-left: 5px solid;
 }
-.alert .alert-striped-right {
+.alert.alert-striped-right {
   border-right: 5px solid;
 }
 /*
