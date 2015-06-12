@@ -8,3 +8,11 @@
     font-size: @font-size;
     line-height: @size;
 }
+
+.list-social-icons-icon(@icon, @background) {
+    background: @background;
+
+    &:after {
+        content: @icon;
+    }
+}
