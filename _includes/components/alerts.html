@@ -1,0 +1,34 @@
+<div class="bs-docs-section">
+  <h1 id="alerts" class="page-header">Alerts</h1>
+
+  <p class="lead">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+
+  <h2 id="alerts-examples">Striped</h2>
+  <p>Use <code>.alert-striped-left</code> or <code>.alert-striped-right</code> with any alert message to add a wider darkened left or right border.</p>
+
+  <div class="bs-callout bs-callout-info" id="callout-alerts-no-default">
+    <h4>No default class</h4>
+    <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.</p>
+  </div>
+
+  <div class="bs-example" data-example-id="simple-alerts">
+    <div class="alert alert-success alert-striped-left" role="alert">
+      <strong>Well done!</strong> You successfully read this important alert message.
+    </div>
+    <div class="alert alert-info alert-striped-left" role="alert">
+      <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+    </div>
+    <div class="alert alert-warning alert-striped-right" role="alert">
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </div>
+    <div class="alert alert-danger alert-striped-right" role="alert">
+      <strong>Oh snap!</strong> Change a few things up and try submitting again.
+    </div>
+  </div>
+{% highlight html %}
+<div class="alert alert-success alert-striped-left" role="alert">...</div>
+<div class="alert alert-info alert-striped-left" role="alert">...</div>
+<div class="alert alert-warning alert-striped-right" role="alert">...</div>
+<div class="alert alert-danger alert-striped-right" role="alert">...</div>
+{% endhighlight %}
+</div>
