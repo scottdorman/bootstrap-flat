@@ -7,26 +7,18 @@
  * Social icons turns list items into inline-block with custom hover effects
  * and backgrounds.
  */
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('../fonts/fontawesome-webfont.eot?v=4.3.0');
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .list-social-icons {
-    padding-left: 0;
+    padding-left: @social-icons-padding-sides;
     list-style: none;
 
     > li {
         display: inline-block;
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 3px;
-        margin-right: 3px;
+        padding-left: @social-icons-padding-sides;
+        padding-right: @social-icons-padding-sides;
+        margin-left: @social-icons-margin-sides;
+        margin-right: @social-icons-margin-sides;
         text-align: center;
-        opacity: 0.4;
+        opacity: @social-icons-opacity-dim;
         background: @gray-darker;
 
         &:first-child {
@@ -134,10 +126,10 @@
 
 .list-social-icons-dim {
     > li {
-        opacity: 0.4;
+        opacity: @social-icons-opacity-dim;
 
         &:hover {
-            opacity: 0.4;
+            opacity: @social-icons-opacity-dim;
         }
     }
 }

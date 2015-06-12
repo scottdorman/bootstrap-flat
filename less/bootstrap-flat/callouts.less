@@ -9,11 +9,11 @@
  */
 .alert {
     .alert-striped-left {
-        border-left: @callout-border-width solid;
+        border-left: @callout-border-width * 5 solid;
     }
 
     .alert-striped-right {
-        border-right: @callout-border-width solid;
+        border-right: @callout-border-width * 5 solid;
     }
 }
 
@@ -26,7 +26,7 @@
 .callout {
     padding: @callout-padding;
     margin: @callout-margin 0;
-    border: 1px solid @callout-border-color;
+    border: @callout-border-width solid @callout-border-color;
     border-radius: @callout-border-radius;
 
     // Headings for larger alerts

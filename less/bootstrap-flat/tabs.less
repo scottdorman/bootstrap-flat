@@ -9,25 +9,25 @@
 .nav-tabs-pivot, .nav-justified.nav-tabs-pivot {
     > li {
         > a {
-            color: #707070;
+            color: @nav-tabs-pivot-link-color;
 
             &:hover, &:focus {
-                color: #4a4a4a;
+                color: @nav-tabs-pivot-link-hover-color;
                 background-color: transparent;
                 border-color: transparent;
-                border-bottom-color: #406da4;
+                border-bottom-color: @nav-tabs-pivot-border-bottom-color;
             }
         }
 
         &.active > a {
             border-color: transparent;
-            border-bottom-color: #406da4;
+            border-bottom-color: @nav-tabs-pivot-border-bottom-color;
 
             &:hover, &:focus {
-                color: #4a4a4a;
+                color: @nav-tabs-pivot-link-hover-color;
                 background-color: transparent;
                 border-color: transparent;
-                border-bottom-color: #406da4;
+                border-bottom-color: @nav-tabs-pivot-border-bottom-color;
             }
         }
     }

@@ -4,13 +4,13 @@
 
 .callout-variant(@color) {
     border-left-color: @color;
-    border-left-width: @callout-border-width;
+    border-left-width: @callout-border-width * 5;
 
     &.callout-striped-right {
         border-left-color: @callout-border-color;
-        border-left-width: 1px;
+        border-left-width: @callout-border-width;
         border-right-color: @color;
-        border-right-width: @callout-border-width;
+        border-right-width: @callout-border-width * 5;
     }
 
     h4 {

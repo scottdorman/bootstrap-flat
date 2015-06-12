@@ -757,13 +757,6 @@ fieldset[disabled] .btn-danger.btn-outline.active {
  * and backgrounds.
  */
 
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.3.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 .list-social-icons {
   padding-left: 0;
   list-style: none;
@@ -912,8 +905,7 @@ fieldset[disabled] .btn-danger.btn-outline.active {
 .pricing-plan-single {
   text-align: center;
 }
-.pricing-plans .pricing-plan-footer,
-.pricing-plan-single .pricing-plan-footer {
+.pricing-plan-footer {
   margin-top: 15px;
   padding-top: 15px;
   border-top: 1px solid #cccccc;
@@ -941,18 +933,17 @@ fieldset[disabled] .btn-danger.btn-outline.active {
 .pricing-plans .pricing-plan {
   padding: 50px 15px;
   margin: 0 10px 30px 10px;
-  background: white;
   border: 1px solid #cccccc;
   border-radius: 0;
 }
 .pricing-plans .pricing-plan-price {
   display: block;
   line-height: 2.3;
-  font-size: 2.5em;
+  font-size: 42px;
   font-weight: 700;
 }
 .pricing-plans .pricing-plan-price small {
-  font-size: 0.5em;
+  font-size: 20px;
   font-weight: normal;
 }
 .pricing-plans .pricing-plan-price small:before {
@@ -961,7 +952,7 @@ fieldset[disabled] .btn-danger.btn-outline.active {
   color: #cccccc;
 }
 .pricing-plans .pricing-plan-price sup {
-  font-size: 0.5em;
+  font-size: 20px;
 }
 .pricing-plans .pricing-plan-title {
   margin-top: 0;
@@ -1003,16 +994,15 @@ fieldset[disabled] .btn-danger.btn-outline.active {
   margin: 40px auto;
   padding: 30px;
   border-bottom: 1px solid #cccccc;
-  background: white;
 }
 .pricing-plan-single .pricing-plan-price {
   display: block;
   line-height: 2.3;
-  font-size: 5em;
+  font-size: 84px;
   font-weight: 700;
 }
 .pricing-plan-single .pricing-plan-price small {
-  font-size: 0.5em;
+  font-size: 40px;
   font-weight: normal;
 }
 .pricing-plan-single .pricing-plan-price small:before {
@@ -1021,7 +1011,7 @@ fieldset[disabled] .btn-danger.btn-outline.active {
   color: #cccccc;
 }
 .pricing-plan-single .pricing-plan-price sup {
-  font-size: 0.5em;
+  font-size: 40px;
 }
 @media screen and (max-width: 768px) {
   .pricing-plan-single .pricing-plan {

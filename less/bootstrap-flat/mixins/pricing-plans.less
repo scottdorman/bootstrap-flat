@@ -11,7 +11,7 @@
         font-weight: 700;
 
         small {
-            font-size: 0.5em;
+            font-size: ceil(@size / 2.125);
             font-weight: normal;
 
             &:before {
@@ -22,7 +22,7 @@
         }
 
         sup {
-            font-size: 0.5em;
+            font-size: ceil(@size / 2.125);
         }
     }
 }
@@ -30,35 +30,6 @@
 .pricing-plan-heading(@margin: 0) {
     .pricing-plan-heading {
         margin-bottom: @margin;
-        border-bottom: 1px solid #ccc;
-    }
-}
-
-.pricing-plan-footer() {
-    .pricing-plan-footer {
-        margin-top: 15px;
-        padding-top: 15px;
-        border-top: 1px solid #cccccc;
-        text-align: center;
-    }
-}
-
-.pricing-plan-body() {
-    &-body {
-        ul {
-            padding-left: 0;
-            list-style: none;
-            margin-bottom: 30px;
-            margin-top: 10px;
-            text-align: left;
-
-            & > li {
-                margin-bottom: 10px;
-            }
-
-            @media screen and (max-width: 480px) {
-                text-align: center;
-            }
-        }
+        border-bottom: @pricing-plan-border-width solid @pricing-plan-border-color;
     }
 }

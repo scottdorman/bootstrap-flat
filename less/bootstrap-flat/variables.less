@@ -86,7 +86,7 @@
 //## Define callout colors, border radius, and padding.
 @callout-padding: 20px;
 @callout-margin: 20px;
-@callout-border-width: 5px;
+@callout-border-width: 1px;
 @callout-border-color: #eee;
 @callout-border-radius: 0;
 
@@ -102,6 +102,9 @@
 
 @social-icons-base-size: 40px;
 @social-icons-base-text-size: 32px;
+@social-icons-opacity-dim: 0.4;
+@social-icons-margin-sides: 3px;
+@social-icons-padding-sides: 0;
 
 // The social icon content variables are based on the variables
 // from Font Awesome, and add a dependency on that icon font.
@@ -331,10 +334,8 @@
 //
 //##
 
-@pricing-plan-background-color: #fff;
-@pricing-plan-header-text-color: #fff;
-@pricing-plan-header-background-color: @pricing-plan-border-color;
-@pricing-plan-border-color: @brand-primary;
+@pricing-plan-border-color: #ccc;
+@pricing-plan-border-width: 1px;
 @pricing-plan-recommended-border-color: darken(@brand-primary, 10%);
 @pricing-plan-recommended-background-color: #f9f9f9;
 @pricing-plan-price-duration-separator:          "/";
@@ -344,11 +345,9 @@
 @input-bg-disabled:              @gray-lighter;
 @cursor-disabled:                not-allowed;
 
-//## Specify custom location and filename of the included zocial icon font. Useful for those including Bootstrap Flat via Bower. 
-
-//** Load fonts from this directory. 
-@zocial-font-path:          "../fonts/"; 
-//** File name for all font files. 
-@zocial-font-name:          "zocial"; 
-//** Element ID within SVG icon file. 
-@zocial-font-svg-id:        "zocial"; 
+//== Tabs
+//
+//##
+@nav-tabs-pivot-border-bottom-color: #406da4;
+@nav-tabs-pivot-link-hover-color: #4a4a4a;
+@nav-tabs-pivot-link-color: #707070;

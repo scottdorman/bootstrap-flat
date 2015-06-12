@@ -9,11 +9,31 @@
 
 .pricing-plans, .pricing-plan-single {
     text-align: center;
-    .pricing-plan-footer();
 }
 
-.pricing-plan {
-    .pricing-plan-body();
+.pricing-plan-footer {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: @pricing-plan-border-width solid @pricing-plan-border-color;
+    text-align: center;
+}
+
+.pricing-plan-body {
+    ul {
+        padding-left: 0;
+        list-style: none;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        text-align: left;
+
+        & > li {
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 480px) {
+            text-align: center;
+        }
+    }
 }
 
 .pricing-plans {
@@ -22,11 +42,9 @@
     .pricing-plan {
         padding: 50px 15px;
         margin: 0 10px 30px 10px;
-        background: #fff;
-        border: 1px solid #ccc;
+        border: @pricing-plan-border-width solid @pricing-plan-border-color;
         border-radius: 0;
-
-        .pricing-plan-price(2.5em);
+        .pricing-plan-price(ceil((@font-size-base * 3)));
 
         &-title {
             margin-top: 0;
@@ -36,12 +54,11 @@
 
             .icon {
                 display: block;
-                width: 100px;
-                height: 100px;
+                .square(100px);
                 margin: 0 auto;
                 margin-bottom: 15px;
                 font-size: 48px;
-                background: #ccc;
+                background: @pricing-plan-border-color;
 
                 &:before {
                     line-height: 100px;
@@ -69,10 +86,8 @@
         width: 80%;
         margin: 40px auto;
         padding: 30px;
-        border-bottom: 1px solid #ccc;
-        background: #fff;
-
-        .pricing-plan-price(5em);
+        border-bottom: @pricing-plan-border-width solid @pricing-plan-border-color;
+        .pricing-plan-price(ceil((@font-size-base * 6)));
 
         @media screen and (max-width: 768px) {
             width: 100%;
