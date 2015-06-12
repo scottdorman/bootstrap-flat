@@ -1,0 +1,328 @@
+<div class="bs-docs-section">
+  <h1 id="#boxed-content" class="page-header">Boxed content</h1>
+
+  <p class="lead">While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component.</p>
+
+  <h2 id="boxed-content-basic">Basic example</h2>
+  <p>Content with a large icon above the title.</p>
+  <div class="bs-example" data-example-id="boxed-content-basic-example">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="boxed-content">
+          <span class="icon glyphicon glyphicon-flag"></span>
+          <h2 class="boxed-content-title">Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+          <a class="btn btn-primary" href="#">Read more</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="boxed-content">
+          <span class="icon glyphicon glyphicon-globe"></span>
+          <h2 class="boxed-content-title">Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="boxed-content">
+          <span class="icon glyphicon glyphicon-cog"></span>
+          <h2 class="boxed-content-title">Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="row">
+  <div class="col-md-4">
+    <div class="boxed-content">
+      <span class="icon glyphicon glyphicon-flag"></span>
+      <h2 class="boxed-content-title">Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+      <a class="btn btn-primary" href="#">Read more</a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="boxed-content">
+      <span class="icon glyphicon glyphicon-globe"></span>
+      <h2 class="boxed-content-title">Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="boxed-content">
+      <span class="icon glyphicon glyphicon-cog"></span>
+      <h2 class="boxed-content-title">Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+
+  <h2 id="boxed-content-left-aligned">Left aligned</h2>
+  <p>Content with a smaller icon that is left aligned and inline with the title.</p>
+  <div class="bs-example" data-example-id="boxed-content-left-aligned-example">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="boxed-content left-aligned">
+          <span class="icon glyphicon glyphicon-flag text-body-color"></span>
+          <h2 class="boxed-content-title">Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="boxed-content left-aligned">
+          <span class="icon glyphicon glyphicon-globe text-body-color"></span>
+          <h2 class="boxed-content-title">Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="boxed-content left-aligned">
+          <span class="icon glyphicon glyphicon-cog text-body-color"></span>
+          <h2 class="boxed-content-title">Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="row">
+  <div class="col-md-4">
+    <div class="boxed-content left-aligned">
+      <span class="icon glyphicon glyphicon-flag text-body-color"></span>
+      <h2 class="boxed-content-title">Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="boxed-content left-aligned">
+      <span class="icon glyphicon glyphicon-globe text-body-color"></span>
+      <h2 class="boxed-content-title">Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="boxed-content left-aligned">
+      <span class="icon glyphicon glyphicon-cog text-body-color"></span>
+      <h2 class="boxed-content-title">Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+
+  <h2 id="boxed-content-large-left-aligned">Left aligned with a larger icon</h2>
+  <p>Similar to the left aligned content box, but the icon is pulled out on it's own.</p>
+  <div class="bs-example" data-example-id="boxed-content-large-left-aligned-example">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="boxed-content left-aligned left-boxed-icon">
+          <span class="icon glyphicon glyphicon-flag"></span>
+          <h2 class="boxed-content-title">Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="boxed-content left-aligned left-boxed-icon">
+          <span class="icon glyphicon glyphicon-globe"></span>
+          <h2 class="boxed-content-title">Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="boxed-content left-aligned left-boxed-icon">
+          <span class="icon glyphicon glyphicon-cog"></span>
+          <h2 class="boxed-content-title">Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="boxed-content left-aligned left-boxed-icon">
+          <span class="icon glyphicon glyphicon-user"></span>
+          <h2 class="boxed-content-title">Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="row">
+  <div class="col-md-6">
+    <div class="boxed-content left-aligned left-boxed-icon">
+      <span class="icon glyphicon glyphicon-flag"></span>
+      <h2 class="boxed-content-title">Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="boxed-content left-aligned left-boxed-icon">
+      <span class="icon glyphicon glyphicon-globe"></span>
+      <h2 class="boxed-content-title">Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="boxed-content left-aligned left-boxed-icon">
+      <span class="icon glyphicon glyphicon-cog"></span>
+      <h2 class="boxed-content-title">Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="boxed-content left-aligned left-boxed-icon">
+      <span class="icon glyphicon glyphicon-user"></span>
+      <h2 class="boxed-content-title">Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit diam magna, ac rhoncus lorem condimentum id. Nam sit amet odio sed lorem pulvinar accumsan.</p>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+
+  <h2 id="boxed-content-vertical-number">Vertical number</h2>
+  <p>Useful when you want to call attention to a number with an icon above it.</p>
+  <div class="bs-example" data-example-id="boxed-content-vertical-numbers-example">
+    <div class="row">
+      <div class="col-sm-4 text-center">
+        <div class="number-box number-box-vertical">
+          <span class="icon glyphicon glyphicon-asterisk"></span>
+          <p>235<span>Lorem ipsum</span></p>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center">
+        <div class="number-box number-box-vertical">
+          <span class="icon glyphicon glyphicon-star"></span>
+          <p>#1<span>Lorem ipsum</span></p>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center">
+        <div class="number-box number-box-vertical">
+          <span class="icon glyphicon glyphicon-user"></span>
+          <p>75<span>Lorem ipsum</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="row">
+  <div class="col-sm-4 text-center">
+    <div class="number-box number-box-vertical">
+      <span class="icon glyphicon glyphicon-asterisk"></span>
+      <p>235<span>Lorem ipsum</span></p>
+    </div>
+  </div>
+  <div class="col-sm-4 text-center">
+    <div class="number-box number-box-vertical">
+      <span class="icon glyphicon glyphicon-star"></span>
+      <p>#1<span>Lorem ipsum</span></p>
+    </div>
+  </div>
+  <div class="col-sm-4 text-center">
+    <div class="number-box number-box-vertical">
+      <span class="icon glyphicon glyphicon-user"></span>
+      <p>75<span>Lorem ipsum</span></p>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+
+  <h2 id="boxed-content-large-vertical-number">Large vertical numbers</h2>
+  <p>Large vertical numbers without an icon.</p>
+  <div class="bs-example" data-example-id="boxed-content-large-vertical-number-example">
+    <div class="row">
+      <div class="col-sm-4 text-center">
+        <div class="number-box number-box-vertical number-box-lg">
+          <p>235<span>Lorem ipsum</span></p>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center">
+        <div class="number-box number-box-vertical number-box-lg">
+          <p>#1<span>Lorem ipsum</span></p>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center">
+        <div class="number-box number-box-vertical number-box-lg">
+          <p>75<span>Lorem ipsum</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="row">
+  <div class="col-sm-4 text-center">
+    <div class="number-box number-box-vertical number-box-lg">
+      <p>235<span>Lorem ipsum</span></p>
+    </div>
+  </div>
+  <div class="col-sm-4 text-center">
+    <div class="number-box number-box-vertical number-box-lg">
+      <p>#1<span>Lorem ipsum</span></p>
+    </div>
+  </div>
+  <div class="col-sm-4 text-center">
+    <div class="number-box number-box-vertical number-box-lg">
+      <p>75<span>Lorem ipsum</span></p>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+
+  <h2 id="boxed-content-horizontal-number">Horizontal numbers</h2>
+  <p>Similar to the vertical number box, but the icon is pulled out to the left.</p>
+  <div class="bs-example" data-example-id="boxed-content-horizontal-number-example">
+    <div class="row">
+      <div class="col-sm-4 text-center">
+        <div class="number-box number-box-horizontal">
+          <span class="icon glyphicon glyphicon-asterisk"></span>
+          <p>235<span>Lorem ipsum</span></p>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center">
+        <div class="number-box number-box-horizontal">
+          <span class="icon glyphicon glyphicon-star"></span>
+          <p>#1<span>Lorem ipsum</span></p>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center">
+        <div class="number-box number-box-horizontal">
+          <span class="icon glyphicon glyphicon-user"></span>
+          <p>75<span>Lorem ipsum</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="row">
+  <div class="col-sm-4 text-center">
+    <div class="number-box number-box-horizontal">
+      <span class="icon glyphicon glyphicon-asterisk"></span>
+      <p>235<span>Lorem ipsum</span></p>
+    </div>
+  </div>
+  <div class="col-sm-4 text-center">
+    <div class="number-box number-box-horizontal">
+      <span class="icon glyphicon glyphicon-star"></span>
+      <p>#1<span>Lorem ipsum</span></p>
+    </div>
+  </div>
+  <div class="col-sm-4 text-center">
+    <div class="number-box number-box-horizontal">
+      <span class="icon glyphicon glyphicon-user"></span>
+      <p>75<span>Lorem ipsum</span></p>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+
+  <h2 id="boxed-content-date">Dates</h2>
+  <p>Display a date, stacked vertically.</p>
+  <div class="bs-example" data-example-id="boxed-content-date-example">
+    <div class="date-box clearfix">
+      <span class="date-box-month">Jun</span><span class="date-box-day">11</span><span class="date-box-year">2015</span>
+    </div>
+  </div>
+{% highlight html %}
+<div class="date-box clearfix">
+  <span class="date-box-month">Jun</span><span class="date-box-day">11</span><span class="date-box-year">2015</span>
+</div>
+{% endhighlight %}
+</div>
