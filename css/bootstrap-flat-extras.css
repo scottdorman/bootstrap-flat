@@ -11,7 +11,7 @@
 /*
  * Boxed content
  *
-*/
+ */
 
 .boxed-content {
   text-align: center;
@@ -1153,4 +1153,57 @@ blockquote.testimonial footer cite {
 }
 .switch {
   text-align: center;
+}
+/*
+ * Lists
+ *
+ * Customized to display numeric (ordered) lists.
+ */
+
+.list-numeric {
+  counter-reset: li;
+  padding-left: 0;
+  margin-left: 14px;
+}
+.list-numeric > li {
+  padding: 4px 12px;
+  position: relative;
+  list-style: none;
+}
+.list-numeric > li:before {
+  content: counter(li);
+  counter-increment: li;
+  font-size: 14px;
+  color: white;
+  background-color: #337ab7;
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  left: -14px;
+}
+.list-sequence {
+  margin: 0 0 0 4px;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: li;
+}
+.list-sequence > li {
+  border-left: 1px #777777 solid;
+  position: relative;
+  padding: 0 14px;
+  margin: 14px;
+  vertical-align: top;
+}
+.list-sequence > li:before {
+  position: absolute;
+  content: counter(li);
+  counter-increment: li;
+  font-size: 32px;
+  color: #777777;
+  left: 0;
+  top: 0;
+  margin-left: -32px;
 }

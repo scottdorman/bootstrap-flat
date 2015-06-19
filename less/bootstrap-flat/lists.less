@@ -1,0 +1,59 @@
+﻿@import (reference) "variables.less";
+@import (reference) "mixins.less";
+
+/*
+ * Lists
+ *
+ * Customized to display numeric (ordered) lists.
+ */
+.list-numeric {
+    counter-reset: li;
+    padding-left: 0;
+    margin-left: 14px;
+
+    & > li {
+        padding: 4px 12px;
+        position: relative;
+        list-style: none;
+    }
+
+    & > li:before {
+        content: counter(li);
+        counter-increment: li;
+        font-size: 14px;
+        color: #fff;
+        background-color: @brand-primary;
+        .square(20px);
+        border-radius: 0;
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        left: -14px;
+    }
+}
+
+.list-sequence {
+    margin: 0 0 0 4px;
+    padding: 0;
+    list-style-type: none;
+    counter-reset: li;
+
+    & > li {
+        border-left: 1px @gray-light solid;
+        position: relative;
+        padding: 0 14px;
+        margin: 14px;
+        vertical-align: top;
+    }
+
+    & > li:before {
+        position: absolute;
+        content: counter(li);
+        counter-increment: li;
+        font-size: 32px;
+        color: @gray-light;
+        left: 0;
+        top: 0;
+        margin-left: -32px;
+    }
+}
