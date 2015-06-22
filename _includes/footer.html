@@ -29,9 +29,8 @@
   <script src="../dist/js/bootstrap.js"></script>
 {% endif %}
 
-  <script src="{{ site.baseurl }}/assets/js/docs.min.js"></script>
 {% if site.github %}
-  <script src="../assets/js/docs.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/docs.min.js"></script>
 {% else %}
   {% for file in site.data.configBridge.paths.docsJs %}
   <script src="{{ file }}"></script>
