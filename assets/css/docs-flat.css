@@ -42,7 +42,7 @@ h4 code {
 .bs-docs-nav .navbar-toggle .icon-bar {
   background-color: rgba(51, 122, 183, 1);
 }
-.bs-docs-header {
+.bs-docs-header, .bs-docs-masthead {
   color: rgba(148, 189, 225, 1);
   background-color: rgba(51, 122, 183, 1);
   background-image: none;
