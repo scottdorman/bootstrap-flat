@@ -38,7 +38,8 @@
     }
 
   .bs-example + .prettyprint,
-  .bs-example + .highlight {
+  .bs-example + .highlight,
+  .bs-example + .zero-clipboard + .highlight {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
