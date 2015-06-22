@@ -45,10 +45,11 @@ h4 code {
 .bs-docs-header {
   color: rgba(148, 189, 225, 1);
   background-color: rgba(51, 122, 183, 1);
+  background-image: none;
 }
 
 .bs-docs-masthead .version {
-  color: #9783b9;
+  color: rgba(148, 189, 225, 1);
 }
 
 .bs-sidenav {
