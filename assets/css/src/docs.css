@@ -37,28 +37,28 @@ h4 code {
 
 /* Outline button for use within the docs */
 .btn-outline {
-  color: rgba(148, 189, 225, 1);
+  color: #563d7c;
   background-color: transparent;
-  border-color: rgba(148, 189, 225, 1);
+  border-color: #563d7c;
 }
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active {
   color: #fff;
-  background-color: rgba(148, 189, 225, 1);
-  border-color: rgba(148, 189, 225, 1);
+  background-color: #563d7c;
+  border-color: #563d7c;
 }
 
 /* Inverted outline button (white on dark) */
 .btn-outline-inverse {
   color: #fff;
   background-color: transparent;
-  border-color: rgba(148, 189, 225, 1);
+  border-color: #cdbfe3;
 }
 .btn-outline-inverse:hover,
 .btn-outline-inverse:focus,
 .btn-outline-inverse:active {
-  color: rgba(148, 189, 225, 1);
+  color: #563d7c;
   text-shadow: none;
   background-color: #fff;
   border-color: #fff;
@@ -71,7 +71,8 @@ h4 code {
   color: #fff;
   text-align: center;
   cursor: default;
-  background-color: rgba(148, 189, 225, 1);
+  background-color: #563d7c;
+  border-radius: 15%;
 }
 .bs-docs-booticon-sm {
   width: 30px;
@@ -86,12 +87,12 @@ h4 code {
   line-height: 140px;
 }
 .bs-docs-booticon-inverse {
-  color: rgba(148, 189, 225, 1);
+  color: #563d7c;
   background-color: #fff;
 }
 .bs-docs-booticon-outline {
   background-color: transparent;
-  border: 1px solid rgba(148, 189, 225, 1);
+  border: 1px solid #cdbfe3;
 }
 
 
@@ -137,16 +138,16 @@ h4 code {
 .bs-docs-nav .navbar-brand,
 .bs-docs-nav .navbar-nav > li > a {
   font-weight: 500;
-  color: rgba(51, 122, 183, 1);
+  color: #563d7c;
 }
 .bs-docs-nav .navbar-nav > li > a:hover,
 .bs-docs-nav .navbar-nav > .active > a,
 .bs-docs-nav .navbar-nav > .active > a:hover {
-  color: rgba(51, 122, 183, 1);
+  color: #463265;
   background-color: #f9f9f9;
 }
 .bs-docs-nav .navbar-toggle .icon-bar {
-  background-color: rgba(51, 122, 183, 1);
+  background-color: #563d7c;
 }
 .bs-docs-nav .navbar-header .navbar-toggle {
   border-color: #fff;
@@ -236,10 +237,15 @@ h4 code {
 .bs-docs-header {
   position: relative;
   padding: 30px 0;
-  color: rgba(148, 189, 225, 1);
+  color: #cdbfe3;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,.1);
-  background-color: rgba(51, 122, 183, 1);
+  background-color: #6f5499;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#563d7c), to(#6f5499));
+  background-image: -webkit-linear-gradient(top, #563d7c 0%, #6f5499 100%);
+  background-image:      -o-linear-gradient(top, #563d7c 0%, #6f5499 100%);
+  background-image:         linear-gradient(to bottom, #563d7c 0%, #6f5499 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
   background-repeat: repeat-x;
 }
 
@@ -260,6 +266,7 @@ h4 code {
 .bs-docs-masthead .version {
   margin-top: -15px;
   margin-bottom: 30px;
+  color: #9783b9;
 }
 .bs-docs-masthead .btn {
   width: 100%;
@@ -337,6 +344,88 @@ h4 code {
   }
 }
 
+
+/*
+ * Carbon ads
+ *
+ * Single display ad that shows on all pages (except homepage) in page headers.
+ * The hella `!important` is required for any pre-set property.
+ */
+
+.carbonad {
+  width: auto !important;
+  height: auto !important;
+  padding: 20px !important;
+  margin: 30px -15px -31px !important;
+  overflow: hidden; /* clearfix */
+  font-size: 13px !important;
+  line-height: 16px !important;
+  text-align: left;
+  background: transparent !important;
+  border: solid #866ab3 !important;
+  border-width: 1px 0 !important;
+}
+.carbonad-img {
+  margin: 0 !important;
+}
+.carbonad-text,
+.carbonad-tag {
+  display: block !important;
+  float: none !important;
+  width: auto !important;
+  height: auto !important;
+  margin-left: 145px !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.carbonad-text {
+  padding-top: 0 !important;
+}
+.carbonad-tag {
+  color: inherit !important;
+  text-align: left !important;
+}
+.carbonad-text a,
+.carbonad-tag a {
+  color: #fff !important;
+}
+.carbonad #azcarbon > img {
+  display: none; /* hide what I assume are tracking images */
+}
+
+@media (min-width: 480px) {
+  .carbonad {
+    width: 330px !important;
+    margin: 20px auto !important;
+    border-width: 1px !important;
+    border-radius: 4px;
+  }
+  .bs-docs-masthead .carbonad {
+    margin: 50px auto 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .carbonad {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .carbonad {
+    position: absolute;
+    top: 0;
+    right: 15px; /* 15px instead of 0 since box-sizing */
+    width: 330px !important;
+    padding: 15px !important;
+    margin: 0 !important;
+  }
+  .bs-docs-masthead .carbonad {
+    position: static;
+  }
+}
+
+
 /*
  * Homepage featurettes
  *
@@ -412,6 +501,63 @@ h4 code {
 
 
 /*
+ * Featured sites
+ *
+ * Homepage thumbnails from the Expo.
+ */
+
+.bs-docs-featured-sites {
+  margin-right: -1px;
+  margin-left: -1px;
+}
+.bs-docs-featured-sites .col-xs-6 {
+  padding: 1px;
+}
+.bs-docs-featured-sites .img-responsive {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .bs-docs-featured-sites .col-sm-3:first-child img {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  .bs-docs-featured-sites .col-sm-3:last-child img {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+
+/*
+ * Examples
+ *
+ * Linked docs examples.
+ */
+
+.bs-examples .thumbnail {
+  margin-bottom: 10px;
+}
+.bs-examples h4 {
+  margin-bottom: 5px;
+}
+.bs-examples p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .bs-examples {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+  .bs-examples > [class^="col-"] {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+
+/*
  * Side navigation
  *
  * Scrollspy and affixed enhanced navigation to highlight sections and secondary
@@ -445,19 +591,19 @@ h4 code {
 .bs-docs-sidebar .nav > li > a:hover,
 .bs-docs-sidebar .nav > li > a:focus {
   padding-left: 19px;
-  color: rgba(148, 189, 225, 1);
+  color: #563d7c;
   text-decoration: none;
   background-color: transparent;
-  border-left: 1px solid rgba(148, 189, 225, 1);
+  border-left: 1px solid #563d7c;
 }
 .bs-docs-sidebar .nav > .active > a,
 .bs-docs-sidebar .nav > .active:hover > a,
 .bs-docs-sidebar .nav > .active:focus > a {
   padding-left: 18px;
   font-weight: bold;
-  color: rgba(148, 189, 225, 1);
+  color: #563d7c;
   background-color: transparent;
-  border-left: 2px solid rgba(148, 189, 225, 1);
+  border-left: 2px solid #563d7c;
 }
 
 /* Nav: second level (shown on .active) */
@@ -496,7 +642,7 @@ h4 code {
 }
 .back-to-top:hover,
 .bs-docs-theme-toggle:hover {
-  color: rgba(148, 189, 225, 1);
+  color: #563d7c;
   text-decoration: none;
 }
 .bs-docs-theme-toggle {
@@ -673,7 +819,7 @@ h1[id] {
 
 /* Docs colors */
 .color-swatches .bs-purple {
-  background-color: rgba(148, 189, 225, 1);
+  background-color: #563d7c;
 }
 .color-swatches .bs-purple-light {
   background-color: #c7bfd3;
@@ -1207,7 +1353,7 @@ h1[id] {
 }
 .bs-glyphicons li:hover {
   color: #fff;
-  background-color: rgba(148, 189, 225, 1);
+  background-color: #563d7c;
 }
 
 @media (min-width: 768px) {
@@ -1219,6 +1365,124 @@ h1[id] {
     width: 12.5%;
     font-size: 12px;
   }
+}
+
+
+/*
+ * Customizer
+ *
+ * Since this is so form control heavy, we have quite a few styles to customize
+ * the display of inputs, headings, and more. Also included are all the download
+ * buttons and actions.
+ */
+
+.bs-customizer .toggle {
+  float: right;
+  margin-top: 25px;
+}
+
+/* Headings and form contrls */
+.bs-customizer label {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #555;
+}
+.bs-customizer h2 {
+  padding-top: 30px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.bs-customizer h3 {
+  margin-bottom: 0;
+}
+.bs-customizer h4 {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.bs-customizer .bs-callout h4 {
+  margin-top: 0; /* lame, but due to specificity we have to duplicate */
+  margin-bottom: 5px;
+}
+.bs-customizer input[type="text"] {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  background-color: #fafafa;
+}
+.bs-customizer .help-block {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+/* For the variables, use regular weight */
+#less-section label {
+  font-weight: normal;
+}
+
+/* Downloads */
+.bs-customize-download .btn-outline {
+  padding: 20px;
+}
+
+/* Error handling */
+.bs-customizer-alert {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  padding: 15px 0;
+  color: #fff;
+  background-color: #d9534f;
+  border-bottom: 1px solid #b94441;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25);
+          box-shadow: inset 0 1px 0 rgba(255,255,255,.25);
+}
+.bs-customizer-alert .close {
+  margin-top: -4px;
+  font-size: 24px;
+}
+.bs-customizer-alert p {
+  margin-bottom: 0;
+}
+.bs-customizer-alert .glyphicon {
+  margin-right: 5px;
+}
+.bs-customizer-alert pre {
+  margin: 10px 0 0;
+  color: #fff;
+  background-color: #a83c3a;
+  border-color: #973634;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);
+          box-shadow: inset 0 2px 4px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);
+}
+
+.bs-dropzone {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #777;
+  text-align: center;
+  border: 2px dashed #eee;
+  border-radius: 4px;
+}
+.bs-dropzone .import-header {
+  margin-bottom: 5px;
+}
+.bs-dropzone .glyphicon-download-alt {
+  font-size: 40px;
+}
+.bs-dropzone hr {
+  width: 100px;
+}
+.bs-dropzone .lead {
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: #333;
+}
+/*.bs-dropzone*/ #import-manual-trigger {
+  cursor: pointer;
+}
+.bs-dropzone p:last-child {
+  margin-bottom: 0;
 }
 
 /*
@@ -1233,7 +1497,7 @@ h1[id] {
   width: 100%;
   margin-bottom: 15px;
   overflow: hidden;
-  color: rgba(148, 189, 225, 1);
+  color: #563d7c;
   background-color: #f9f9f9;
   border-radius: 4px;
 }
@@ -1248,7 +1512,7 @@ h1[id] {
 }
 .bs-brand-logos .inverse {
   color: #fff;
-  background-color: rgba(148, 189, 225, 1);
+  background-color: #563d7c;
 }
 
 /* Heading content within */
@@ -1317,8 +1581,8 @@ h1[id] {
 }
 .btn-clipboard-hover {
   color: #fff;
-  background-color: rgba(148, 189, 225, 1);
-  border-color: rgba(148, 189, 225, 1);
+  background-color: #563d7c;
+  border-color: #563d7c;
 }
 
 @media (min-width: 768px) {
@@ -1372,3 +1636,4 @@ h1[id] {
   -webkit-box-shadow: 0 0 8px rgba(82,168,236,.6);
           box-shadow: 0 0 8px rgba(82,168,236,.6);
 }
+
