@@ -13,6 +13,6 @@ repo:             https://github.com/scottdorman/bootstrap-flat
 sass_repo:        https://github.com/scottdorman/bootstrap-flat-sass
 
 download:
-  source:         https://github.com/scottdorman/archive/v3.3.4.zip
-  dist:           https://github.com/scottdorman/releases/download/v3.3.4/bootstrap-flat-3.3.4-dist.zip
-  sass:           https://github.com/bootstrap-sass/archive/v3.3.4.tar.gz
+  source:         https://github.com/scottdorman/bootstrap-flat/archive/v3.3.4.zip
+  dist:           https://github.com/scottdorman/bootstrap-flat/releases/download/v3.3.4/bootstrap-flat-3.3.4-dist.zip
+  sass:           https://github.com/scottdorman/bootstrap-sass/archive/v3.3.4.tar.gz
