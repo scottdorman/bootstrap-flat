@@ -1,5 +1,10 @@
-Bootstrap Flat
-==============
+# Bootstrap Flat [![GitHub license](https://img.shields.io/github/license/scottdorman/bootstrap-flat.svg)](https://github.com/scottdorman/bootstrap-flat/blob/master/LICENSE)
+
+| | |
+|-------|------|
+|bootstrap-flat|[![NuGet downloads](https://img.shields.io/nuget/dt/bootstrap.flat.svg)](http://www.nuget.org/packages/bootstrap.flat) [![NuGet version](https://img.shields.io/nuget/v/bootstrap.flat.svg)](http://www.nuget.org/packages/bootstrap.flat)  [![Bower version](https://img.shields.io/bower/v/bootstrap-flat.svg)](http://www.nuget.org/packages/bootstrap-flat)|
+|bootstrap-flat-less|[![NuGet downloads](https://img.shields.io/nuget/dt/bootstrap.flat.less.svg)](http://www.nuget.org/packages/bootstrap.flat.less) [![NuGet version](https://img.shields.io/nuget/v/bootstrap.flat.less.svg)](http://www.nuget.org/packages/bootstrap.flat.less)|
+|bootstrap-flat-sass|[![NuGet downloads](https://img.shields.io/nuget/dt/bootstrap.flat.sass.svg)](http://www.nuget.org/packages/bootstrap.flat.sass) [![NuGet version](https://img.shields.io/nuget/v/bootstrap.flat.sass.svg)](http://www.nuget.org/packages/bootstrap.flat.sass)|
 
 A simple flat theme for [Twitter Bootstrap](http://getbootstrap.com) 3. To see Bootstrap flat in action, check out the [documentation](http://scottdorman.github.io/bootstrap-flat).
 
