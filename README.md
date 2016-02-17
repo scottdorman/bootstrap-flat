@@ -1,5 +1,7 @@
 # Bootstrap Flat [![GitHub license](https://img.shields.io/github/license/scottdorman/bootstrap-flat.svg)](https://github.com/scottdorman/bootstrap-flat/blob/master/LICENSE)
 
+[![Join the chat at https://gitter.im/scottdorman/bootstrap-flat](https://badges.gitter.im/scottdorman/bootstrap-flat.svg)](https://gitter.im/scottdorman/bootstrap-flat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 | | |
 |-------|------|
 |bootstrap-flat|[![NuGet downloads](https://img.shields.io/nuget/dt/bootstrap.flat.svg)](http://www.nuget.org/packages/bootstrap.flat) [![NuGet version](https://img.shields.io/nuget/v/bootstrap.flat.svg)](http://www.nuget.org/packages/bootstrap.flat)  [![Bower version](https://img.shields.io/bower/v/bootstrap-flat.svg)](http://www.nuget.org/packages/bootstrap-flat)|
