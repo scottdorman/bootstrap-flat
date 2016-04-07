@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-flat",
-  "version": "1.0",
+  "version": "v3.3.4",
   "description": "A flat theme for Bootstrap, inspired by Microsoft's Modern Design Language (originally created for Windows Phone and Windows 8 and updated for Windows 10), Google's Material Design Language, and Apple's flatter design language for iOS.",
   "main": [
     "less/bootstrap-flat.less",
